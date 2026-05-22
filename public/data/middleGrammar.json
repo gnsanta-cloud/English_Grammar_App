@@ -1,0 +1,110 @@
+[
+  {
+    "title": "be동사 (현재)",
+    "rule": "I → am, You/We/They → are, He/She/It → is. 부정: am not / isn't / aren't",
+    "example": "She is a student.",
+    "exampleKo": "그녀는 학생입니다."
+  },
+  {
+    "title": "일반동사 (현재)",
+    "rule": "3인칭 단수 주어 뒤에는 동사에 -s/-es. 부정·의문에는 do/does",
+    "example": "He plays soccer every Sunday.",
+    "exampleKo": "그는 매주 일요일 축구를 합니다."
+  },
+  {
+    "title": "현재진행",
+    "rule": "am/is/are + 동사-ing. 지금 진행 중인 일",
+    "example": "They are studying English now.",
+    "exampleKo": "그들은 지금 영어를 공부하고 있습니다."
+  },
+  {
+    "title": "과거 시제",
+    "rule": "규칙동사 -ed, 불규칙동사는 과거형 암기. was/were + -ing는 과거진행",
+    "example": "I visited Jeju last summer.",
+    "exampleKo": "나는 지난여름 제주를 방문했습니다."
+  },
+  {
+    "title": "미래 will",
+    "rule": "will + 동사원형. 갑작스러운 결심·예측",
+    "example": "It will rain tomorrow.",
+    "exampleKo": "내일 비가 올 것입니다."
+  },
+  {
+    "title": "be going to",
+    "rule": "be going to + 동사원형. 계획·근거 있는 예측",
+    "example": "We are going to start a club.",
+    "exampleKo": "우리는 동아리를 시작할 예정입니다."
+  },
+  {
+    "title": "조동사 can",
+    "rule": "can + 동사원형. 능력·허가. 부정 can't",
+    "example": "You can use my dictionary.",
+    "exampleKo": "내 사전을 써도 됩니다."
+  },
+  {
+    "title": "must / have to",
+    "rule": "must: 강한 의무·추측. have to: 외부적 의무",
+    "example": "Students must wear uniforms.",
+    "exampleKo": "학생들은 교복을 입어야 합니다."
+  },
+  {
+    "title": "비교급·최상급",
+    "rule": "비교급 -er / more, 최상급 -est / most. 불규칙 good-better-best",
+    "example": "This book is more interesting than that one.",
+    "exampleKo": "이 책이 저 책보다 더 재미있습니다."
+  },
+  {
+    "title": "명사 countable",
+    "rule": "셀 수 있는 명사는 a/an, 복수 -s. many/few",
+    "example": "There are many apples on the table.",
+    "exampleKo": "테이블 위에 사과가 많이 있습니다."
+  },
+  {
+    "title": "명사 uncountable",
+    "rule": "셀 수 없는 명사는 much/little. a piece of 등으로 수량 표현",
+    "example": "I need some water.",
+    "exampleKo": "물이 좀 필요합니다."
+  },
+  {
+    "title": "관사 a/an/the",
+    "rule": "a/an: 처음·불특정. the: 특정·유일·알려진 것",
+    "example": "The sun rises in the east.",
+    "exampleKo": "태양은 동쪽에서 뜹니다."
+  },
+  {
+    "title": "전치사 in/on/at",
+    "rule": "in: 안·월·년. on: 날·요일·표면. at: 시각·장소",
+    "example": "The class starts at 9 a.m.",
+    "exampleKo": "수업은 오전 9시에 시작합니다."
+  },
+  {
+    "title": "There is/are",
+    "rule": "There is + 단수, There are + 복수. '~이 있다' 존재",
+    "example": "There is a park near my house.",
+    "exampleKo": "우리 집 근처에 공원이 있습니다."
+  },
+  {
+    "title": "의문사 What/Where",
+    "rule": "의문사 + do/does/did + 주어 + 동사. What: 무엇, Where: 어디",
+    "example": "Where did you buy this bag?",
+    "exampleKo": "이 가방 어디서 샀니?"
+  },
+  {
+    "title": "접속사 and/but/because",
+    "rule": "and: 나열, but: 대조, because: 이유",
+    "example": "I stayed home because it was cold.",
+    "exampleKo": "추워서 집에 있었습니다."
+  },
+  {
+    "title": "to부정사",
+    "rule": "to + 동사원형. 목적·의지·명사적 용법",
+    "example": "I want to learn French.",
+    "exampleKo": "프랑스어를 배우고 싶습니다."
+  },
+  {
+    "title": "동명사",
+    "rule": "동사-ing가 명사 역할. enjoy/finish + -ing",
+    "example": "She enjoys reading novels.",
+    "exampleKo": "그녀는 소설 읽기를 즐깁니다."
+  }
+]

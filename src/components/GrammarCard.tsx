@@ -1,0 +1,214 @@
+import { useEffect, useRef, useState } from 'react';
+import { motion, useMotionValue, animate, PanInfo } from 'framer-motion';
+import type { GrammarLesson } from '../types';
+import { speakEnglish } from '../utils/speech';
+
+interface GrammarCardProps {
+  lesson: GrammarLesson;
+  onSwipeLeft: () => void;
+  onSwipeRight: () => void;
+  onSwipeUp: () => void;
+  saved: boolean;
+}
+
+const SWIPE_THRESHOLD = 80;
+const TAP_THRESHOLD = 24;
+
+export function GrammarCard({
+  lesson,
+  onSwipeLeft,
+  onSwipeRight,
+  onSwipeUp,
+  saved,
+}: GrammarCardProps) {
+  const [flipped, setFlipped] = useState(false);
+  const [speaking, setSpeaking] = useState(false);
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const pointerStart = useRef<{ x: number; y: number } | null>(null);
+  const didDrag = useRef(false);
+
+  useEffect(() => {
+    setFlipped(false);
+  }, [lesson.id]);
+
+  const handleSpeak = async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (speaking) return;
+    setSpeaking(true);
+    try {
+      await speakEnglish(lesson.example);
+    } finally {
+      setSpeaking(false);
+    }
+  };
+
+  const handleFlipTap = () => {
+    setFlipped((v) => !v);
+  };
+
+  const resetPosition = () => {
+    animate(x, 0, { type: 'spring', stiffness: 320, damping: 28 });
+    animate(y, 0, { type: 'spring', stiffness: 320, damping: 28 });
+  };
+
+  const flyOff = (dir: 'left' | 'right' | 'up', callback: () => void) => {
+    const targets =
+      dir === 'left'
+        ? { x: -window.innerWidth * 1.2, y: 0 }
+        : dir === 'right'
+          ? { x: window.innerWidth * 1.2, y: 0 }
+          : { x: 0, y: -window.innerHeight * 0.8 };
+
+    Promise.all([
+      animate(x, targets.x, { duration: 0.38, ease: [0.32, 0.72, 0, 1] }),
+      animate(y, targets.y, { duration: 0.38, ease: [0.32, 0.72, 0, 1] }),
+    ]).then(() => {
+      setFlipped(false);
+      callback();
+      x.set(0);
+      y.set(0);
+    });
+  };
+
+  const onPointerDown = (e: React.PointerEvent) => {
+    pointerStart.current = { x: e.clientX, y: e.clientY };
+    didDrag.current = false;
+  };
+
+  const onPointerUp = (e: React.PointerEvent) => {
+    if (!pointerStart.current || didDrag.current) {
+      pointerStart.current = null;
+      return;
+    }
+    const dx = Math.abs(e.clientX - pointerStart.current.x);
+    const dy = Math.abs(e.clientY - pointerStart.current.y);
+    pointerStart.current = null;
+    if (dx < TAP_THRESHOLD && dy < TAP_THRESHOLD) handleFlipTap();
+  };
+
+  const onDragStart = () => {
+    didDrag.current = true;
+  };
+
+  const onDragEnd = (_: unknown, info: PanInfo) => {
+    const { offset, velocity } = info;
+    const absX = Math.abs(offset.x);
+    const absY = Math.abs(offset.y);
+
+    if (absX < TAP_THRESHOLD && absY < TAP_THRESHOLD) {
+      handleFlipTap();
+      resetPosition();
+      return;
+    }
+
+    if (absY > absX && (offset.y < -SWIPE_THRESHOLD || velocity.y < -400)) {
+      flyOff('up', onSwipeUp);
+      return;
+    }
+    if (offset.x < -SWIPE_THRESHOLD || velocity.x < -400) {
+      flyOff('left', onSwipeLeft);
+      return;
+    }
+    if (offset.x > SWIPE_THRESHOLD || velocity.x > 400) {
+      flyOff('right', onSwipeRight);
+      return;
+    }
+    resetPosition();
+  };
+
+  return (
+    <div className="card-stage">
+      <motion.div
+        className="card-drag-wrapper"
+        style={{ x, y }}
+        drag
+        dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+        dragElastic={0.12}
+        dragMomentum={false}
+        onDragStart={onDragStart}
+        onDragEnd={onDragEnd}
+        onPointerDown={onPointerDown}
+        onPointerUp={onPointerUp}
+        key={lesson.id}
+        initial={{ opacity: 0, scale: 0.96 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.35, ease: 'easeOut' }}
+      >
+        <div className={`flip-container ${flipped ? 'is-flipped' : ''}`}>
+          <div className="flip-inner">
+            <div className="flip-face flip-front">
+              {saved && <span className="saved-badge">저장됨</span>}
+              <div className="flip-front-main">
+                <div className="card-word-block">
+                  <h2 className="word-text grammar-title-text">{lesson.title}</h2>
+                  <button
+                    type="button"
+                    className="speaker-btn"
+                    onPointerDown={(e) => e.stopPropagation()}
+                    onClick={handleSpeak}
+                    aria-label="예문 발음 듣기"
+                    disabled={speaking}
+                  >
+                    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M11 5L6 9H3v6h3l5 4V5zm8.5 3.5a4.5 4.5 0 010 7M15 9.5a2.5 2.5 0 010 5"
+                      />
+                    </svg>
+                    <span className="speaker-label">예문</span>
+                  </button>
+                </div>
+              </div>
+              <div className="flip-front-footer">
+                <div className="swipe-hints">
+                  <span>← 다음</span>
+                  <span>↑ 저장</span>
+                  <span>→ 이전</span>
+                </div>
+                <button
+                  type="button"
+                  className="flip-action-btn"
+                  onPointerDown={(e) => e.stopPropagation()}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleFlipTap();
+                  }}
+                >
+                  규칙 · 예문 보기
+                </button>
+              </div>
+            </div>
+
+            <div className="flip-face flip-back">
+              <div className="flip-back-content">
+                <p className="back-label">규칙</p>
+                <p className="meaning-text grammar-rule-text">{lesson.rule}</p>
+                <div className="example-block">
+                  <p className="back-label">예문</p>
+                  <p className="example-en">{lesson.example}</p>
+                  <p className="example-ko">{lesson.exampleKo}</p>
+                </div>
+              </div>
+              <button
+                type="button"
+                className="flip-action-btn"
+                onPointerDown={(e) => e.stopPropagation()}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleFlipTap();
+                }}
+              >
+                앞면으로
+              </button>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  );
+}

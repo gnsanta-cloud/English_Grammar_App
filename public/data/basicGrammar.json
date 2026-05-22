@@ -1,0 +1,62 @@
+[
+  {
+    "title": "인칭대명사",
+    "rule": "I, you, he, she, it, we, they. 소유격 my/your/his/her",
+    "example": "They are my friends.",
+    "exampleKo": "그들은 내 친구들입니다."
+  },
+  {
+    "title": "This/That",
+    "rule": "This/These: 가까운 것. That/Those: 먼 것",
+    "example": "That is my bag.",
+    "exampleKo": "저것은 내 가방입니다."
+  },
+  {
+    "title": "형용사 위치",
+    "rule": "형용사는 명사 앞. very + 형용사",
+    "example": "It is a beautiful day.",
+    "exampleKo": "아름다운 날입니다."
+  },
+  {
+    "title": "부사 빈도",
+    "rule": "always, usually, often, sometimes, never. be동사 뒤·일반동사 앞",
+    "example": "I usually drink coffee in the morning.",
+    "exampleKo": "나는 보통 아침에 커피를 마신다."
+  },
+  {
+    "title": "Some/Any",
+    "rule": "some: 긍정·제안. any: 부정·의문",
+    "example": "Do you have any questions?",
+    "exampleKo": "질문 있으세요?"
+  },
+  {
+    "title": "How many/much",
+    "rule": "How many + 복수명사, How much + 불가산",
+    "example": "How much does it cost?",
+    "exampleKo": "얼마예요?"
+  },
+  {
+    "title": "Let us",
+    "rule": "Let's + 동사원형. 제안·권유",
+    "example": "Let's take a break.",
+    "exampleKo": "잠깐 쉽시다."
+  },
+  {
+    "title": "Would like",
+    "rule": "would like to + 동사. 정중한 희망",
+    "example": "I would like to order pasta.",
+    "exampleKo": "파스타를 주문하고 싶습니다."
+  },
+  {
+    "title": "Look forward to",
+    "rule": "look forward to + -ing. ~을 고대하다",
+    "example": "I look forward to meeting you.",
+    "exampleKo": "당신을 만나기를 고대합니다."
+  },
+  {
+    "title": "Give up",
+    "rule": "give up + -ing/명사. 포기하다",
+    "example": "Don't give up studying.",
+    "exampleKo": "공부를 포기하지 마세요."
+  }
+]

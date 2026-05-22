@@ -1,0 +1,92 @@
+[
+  {
+    "title": "현재완료 (경험)",
+    "rule": "have/has + p.p. ever/never/before과 함께 경험",
+    "example": "I have been to London twice.",
+    "exampleKo": "나는 런던에 두 번 가 본 적이 있다."
+  },
+  {
+    "title": "현재완료 (계속)",
+    "rule": "for/since와 함께 시작부터 지금까지",
+    "example": "She has lived here for ten years.",
+    "exampleKo": "그녀는 여기서 10년째 살고 있다."
+  },
+  {
+    "title": "현재완료 (완료·결과)",
+    "rule": "just/already/yet. 막·이미·아직",
+    "example": "He has just finished his homework.",
+    "exampleKo": "그는 방금 숙제를 끝냈다."
+  },
+  {
+    "title": "수동태",
+    "rule": "be + p.p. 행위자는 by. 4형식·5형식 주의",
+    "example": "The letter was written by Tom.",
+    "exampleKo": "그 편지는 Tom에 의해 쓰였다."
+  },
+  {
+    "title": "관계대명사 who",
+    "rule": "선행사가 사람 → who. 주격·목적격",
+    "example": "The man who called you is my uncle.",
+    "exampleKo": "너에게 전화한 남자는 내 삼촌이다."
+  },
+  {
+    "title": "관계대명사 which",
+    "rule": "선행사가 사물 → which/that",
+    "example": "This is the book which I recommended.",
+    "exampleKo": "이것이 내가 추천한 책이다."
+  },
+  {
+    "title": "관계부사 where/when",
+    "rule": "where: 장소, when: 시간. 뒤에 완전한 절",
+    "example": "I remember the day when we first met.",
+    "exampleKo": "우리가 처음 만난 날을 기억한다."
+  },
+  {
+    "title": "가정법 과거",
+    "rule": "If + 과거, 주절 would/could + 동사원형. 현재 사실 반대",
+    "example": "If I had time, I would help you.",
+    "exampleKo": "시간이 있다면 도와줄 텐데."
+  },
+  {
+    "title": "가정법 과거완료",
+    "rule": "If + had p.p., would have p.p. 과거 사실 반대",
+    "example": "If she had studied, she would have passed.",
+    "exampleKo": "공부했더라면 합격했을 것이다."
+  },
+  {
+    "title": "분사구문",
+    "rule": "접속사+주어 생략 후 -ing/-ed. 부대상황",
+    "example": "Walking down the street, I met an old friend.",
+    "exampleKo": "거리를 걷다가 옛 친구를 만났다."
+  },
+  {
+    "title": "too ~ to",
+    "rule": "too + 형용사/부사 + to V: 너무 ~해서 …할 수 없다",
+    "example": "The box is too heavy to carry.",
+    "exampleKo": "그 상자는 너무 무거워서 들 수 없다."
+  },
+  {
+    "title": "enough to",
+    "rule": "형용사/부사 + enough + to V: …할 만큼 충분히",
+    "example": "She is old enough to vote.",
+    "exampleKo": "그녀는 투표할 만큼 나이가 들었다."
+  },
+  {
+    "title": "간접의문문",
+    "rule": "의문사+주어+동사 순서. know/tell/wonder 뒤",
+    "example": "I don't know where he lives.",
+    "exampleKo": "그가 어디 사는지 모른다."
+  },
+  {
+    "title": "It is ~ that 강조",
+    "rule": "It is/was + 강조부분 + that/who + 나머지",
+    "example": "It was Tom that broke the window.",
+    "exampleKo": "창문을 깬 것은 Tom이었다."
+  },
+  {
+    "title": "도치",
+    "rule": "부정어 도치: Never/Rarely/Seldom + 조동사 + 주어",
+    "example": "Never have I seen such a view.",
+    "exampleKo": "그런 경치는 본 적이 없다."
+  }
+]

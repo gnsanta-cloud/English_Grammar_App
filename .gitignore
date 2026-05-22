@@ -1,0 +1,16 @@
+node_modules
+dist
+__pycache__
+*.pyc
+scripts/build_log.txt
+.DS_Store
+*.local
+.idea
+.vscode
+android/local.properties
+android/.gradle
+android/app/build
+android/build
+ios/App/Pods
+ios/App/build
+.capacitor

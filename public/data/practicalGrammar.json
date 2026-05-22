@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Would you mind",
+    "rule": "Would you mind + -ing? 정중한 요청",
+    "example": "Would you mind opening the window?",
+    "exampleKo": "창문 좀 열어 주시겠어요?"
+  },
+  {
+    "title": "Could you",
+    "rule": "Could you + 동사원형? 공손한 부탁",
+    "example": "Could you speak more slowly?",
+    "exampleKo": "좀 더 천천히 말씀해 주시겠어요?"
+  },
+  {
+    "title": "I'm used to",
+    "rule": "be used to + -ing. ~에 익숙하다",
+    "example": "I'm used to getting up early.",
+    "exampleKo": "일찍 일어나는 것에 익숙합니다."
+  },
+  {
+    "title": "Have you ever",
+    "rule": "Have you ever + p.p.? 경험 질문",
+    "example": "Have you ever tried kimchi?",
+    "exampleKo": "김치 먹어 본 적 있어요?"
+  },
+  {
+    "title": "I'd rather",
+    "rule": "would rather + 동사원형. 차라리 ~하다",
+    "example": "I'd rather walk than drive.",
+    "exampleKo": "운전하기보다 걷는 게 낫습니다."
+  },
+  {
+    "title": "It's time to",
+    "rule": "It's time to + V / for + 명사. ~할 시간이다",
+    "example": "It's time to leave.",
+    "exampleKo": "떠날 시간입니다."
+  },
+  {
+    "title": "Suggest that",
+    "rule": "suggest that + 주어 + (should) + V. 제안",
+    "example": "She suggested that we take a taxi.",
+    "exampleKo": "그녀는 택시를 타자고 제안했다."
+  },
+  {
+    "title": "Apologize for",
+    "rule": "apologize for + -ing. ~에 대해 사과",
+    "example": "I apologize for being late.",
+    "exampleKo": "늦어서 죄송합니다."
+  },
+  {
+    "title": "Look + 형용사",
+    "rule": "look/sound/feel + 형용사. 감각동사",
+    "example": "You look tired today.",
+    "exampleKo": "오늘 피곤해 보여요."
+  },
+  {
+    "title": "Make + O + V",
+    "rule": "make + 목적어 + 동사원형. ~하게 만들다",
+    "example": "The news made me happy.",
+    "exampleKo": "그 소식이 나를 기쁘게 했다."
+  }
+]
