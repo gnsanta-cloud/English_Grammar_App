@@ -1,4 +1,4 @@
-﻿package com.english.grammarapp;
+package com.english.grammarapp;
 
 import com.getcapacitor.BridgeActivity;
 
