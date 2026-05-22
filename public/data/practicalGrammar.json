@@ -856,5 +856,477 @@
         ]
       }
     ]
+  },
+  {
+    "title": "How about ~ing",
+    "rule": "How about + -ing? 제안·권유.",
+    "example": "How about going out for lunch?",
+    "exampleKo": "점심 외식하는 건 어때요?",
+    "tip": "What about ~ing도 같은 뜻입니다.",
+    "quizzes": [
+      {
+        "sentence": "How about ___ a movie tonight?",
+        "answer": "watching",
+        "choices": [
+          "watching",
+          "watch",
+          "to watch",
+          "watched"
+        ]
+      },
+      {
+        "sentence": "How about we ___ early?",
+        "answer": "leave",
+        "choices": [
+          "leave",
+          "leaving",
+          "to leave",
+          "left"
+        ]
+      },
+      {
+        "sentence": "What about ___ coffee?",
+        "answer": "having",
+        "choices": [
+          "having",
+          "have",
+          "to have",
+          "had"
+        ]
+      },
+      {
+        "sentence": "How about ___ to the park?",
+        "answer": "walking",
+        "choices": [
+          "walking",
+          "walk",
+          "to walk",
+          "walked"
+        ]
+      },
+      {
+        "sentence": "How about ___ tomorrow?",
+        "answer": "meeting",
+        "choices": [
+          "meeting",
+          "meet",
+          "to meet",
+          "met"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Why don't we",
+    "rule": "Why don't we / you + 동사원형. 부드러운 제안.",
+    "example": "Why don't we take a break?",
+    "exampleKo": "잠깐 쉬는 게 어때요?",
+    "tip": "Why don't you ~?는 상대에게 제안합니다.",
+    "quizzes": [
+      {
+        "sentence": "Why don't we ___ a taxi?",
+        "answer": "take",
+        "choices": [
+          "take",
+          "taking",
+          "to take",
+          "took"
+        ]
+      },
+      {
+        "sentence": "Why don't you ___ and sit down?",
+        "answer": "come",
+        "choices": [
+          "come",
+          "coming",
+          "to come",
+          "came"
+        ]
+      },
+      {
+        "sentence": "Why don't we ___ for a walk?",
+        "answer": "go",
+        "choices": [
+          "go",
+          "going",
+          "to go",
+          "went"
+        ]
+      },
+      {
+        "sentence": "Why don't you ___ me later?",
+        "answer": "call",
+        "choices": [
+          "call",
+          "calling",
+          "to call",
+          "called"
+        ]
+      },
+      {
+        "sentence": "Why don't we ___ at six?",
+        "answer": "meet",
+        "choices": [
+          "meet",
+          "meeting",
+          "to meet",
+          "met"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "I'd better",
+    "rule": "I'd better + 동사원형. ~하는 게 낫다.",
+    "example": "I'd better leave now.",
+    "exampleKo": "지금 가는 게 좋겠어요.",
+    "tip": "had better not = 하지 않는 게 낫다.",
+    "quizzes": [
+      {
+        "sentence": "You'd better ___ soon.",
+        "answer": "hurry",
+        "choices": [
+          "hurry",
+          "hurrying",
+          "to hurry",
+          "hurried"
+        ]
+      },
+      {
+        "sentence": "We'd better not ___ late.",
+        "answer": "be",
+        "choices": [
+          "be",
+          "are",
+          "being",
+          "been"
+        ]
+      },
+      {
+        "sentence": "I'd better ___ the doctor.",
+        "answer": "see",
+        "choices": [
+          "see",
+          "seeing",
+          "to see",
+          "saw"
+        ]
+      },
+      {
+        "sentence": "She'd better ___ quiet.",
+        "answer": "be",
+        "choices": [
+          "be",
+          "are",
+          "being",
+          "been"
+        ]
+      },
+      {
+        "sentence": "They'd better ___ a reservation.",
+        "answer": "make",
+        "choices": [
+          "make",
+          "making",
+          "to make",
+          "made"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Let me know",
+    "rule": "Let me know if/when ~. 알려 주세요.",
+    "example": "Let me know if you need help.",
+    "exampleKo": "도움이 필요하면 알려 주세요.",
+    "tip": "Let me + 동사원형 = 허락·요청.",
+    "quizzes": [
+      {
+        "sentence": "Let me ___ if anything changes.",
+        "answer": "know",
+        "choices": [
+          "know",
+          "knowing",
+          "to know",
+          "knew"
+        ]
+      },
+      {
+        "sentence": "Let me ___ you with that.",
+        "answer": "help",
+        "choices": [
+          "help",
+          "helping",
+          "to help",
+          "helped"
+        ]
+      },
+      {
+        "sentence": "Let us ___ when you arrive.",
+        "answer": "know",
+        "choices": [
+          "know",
+          "knowing",
+          "to know",
+          "knew"
+        ]
+      },
+      {
+        "sentence": "Let me ___ a look.",
+        "answer": "take",
+        "choices": [
+          "take",
+          "taking",
+          "to take",
+          "took"
+        ]
+      },
+      {
+        "sentence": "Let me ___ that again.",
+        "answer": "try",
+        "choices": [
+          "try",
+          "trying",
+          "to try",
+          "tried"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Are you free to",
+    "rule": "Are you free to ~? 시간·가능 여부.",
+    "example": "Are you free to talk now?",
+    "exampleKo": "지금 이야기할 시간 있으세요?",
+    "tip": "free = 한가한, 가능한.",
+    "quizzes": [
+      {
+        "sentence": "Are you free ___ meet tomorrow?",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "on"
+        ]
+      },
+      {
+        "sentence": "Are you ___ this evening?",
+        "answer": "free",
+        "choices": [
+          "free",
+          "freely",
+          "freedom",
+          "freer"
+        ]
+      },
+      {
+        "sentence": "When are you free ___ call?",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "on"
+        ]
+      },
+      {
+        "sentence": "I'm not free ___ lunch.",
+        "answer": "for",
+        "choices": [
+          "for",
+          "to",
+          "ing",
+          "on"
+        ]
+      },
+      {
+        "sentence": "Are you free ___ help?",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "on"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "I'm thinking of",
+    "rule": "think of + -ing / noun. ~을 고려 중이다.",
+    "example": "I'm thinking of changing jobs.",
+    "exampleKo": "직장을 옮기는 걸 고려 중이에요.",
+    "tip": "think about도 비슷하게 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "I'm thinking of ___ abroad.",
+        "answer": "studying",
+        "choices": [
+          "studying",
+          "study",
+          "to study",
+          "studied"
+        ]
+      },
+      {
+        "sentence": "What are you thinking ___?",
+        "answer": "about",
+        "choices": [
+          "about",
+          "of",
+          "on",
+          "for"
+        ]
+      },
+      {
+        "sentence": "She's thinking of ___ a car.",
+        "answer": "buying",
+        "choices": [
+          "buying",
+          "buy",
+          "to buy",
+          "bought"
+        ]
+      },
+      {
+        "sentence": "We're thinking of ___ early.",
+        "answer": "leaving",
+        "choices": [
+          "leaving",
+          "leave",
+          "to leave",
+          "left"
+        ]
+      },
+      {
+        "sentence": "He's thinking of ___ you.",
+        "answer": "calling",
+        "choices": [
+          "calling",
+          "call",
+          "to call",
+          "called"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Thanks for ~ing",
+    "rule": "Thanks for + -ing. ~해 줘서 고마워요.",
+    "example": "Thanks for helping me.",
+    "exampleKo": "도와줘서 고마워요.",
+    "tip": "Thank you for ~ing도 같습니다.",
+    "quizzes": [
+      {
+        "sentence": "Thanks for ___ me.",
+        "answer": "calling",
+        "choices": [
+          "calling",
+          "call",
+          "to call",
+          "called"
+        ]
+      },
+      {
+        "sentence": "Thank you for ___ patient.",
+        "answer": "being",
+        "choices": [
+          "being",
+          "be",
+          "to be",
+          "been"
+        ]
+      },
+      {
+        "sentence": "Thanks for ___ the email.",
+        "answer": "sending",
+        "choices": [
+          "sending",
+          "send",
+          "to send",
+          "sent"
+        ]
+      },
+      {
+        "sentence": "Thanks for ___ so kind.",
+        "answer": "being",
+        "choices": [
+          "being",
+          "be",
+          "to be",
+          "been"
+        ]
+      },
+      {
+        "sentence": "Thank you for ___ us.",
+        "answer": "joining",
+        "choices": [
+          "joining",
+          "join",
+          "to join",
+          "joined"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Can I get / May I",
+    "rule": "Can I get ~? 주문·요청. May I ~? 허락.",
+    "example": "Can I get a coffee, please?",
+    "exampleKo": "커피 한 잔 주시겠어요?",
+    "tip": "식당·카페에서 자주 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "Can I get ___ water?",
+        "answer": "some",
+        "choices": [
+          "some",
+          "any",
+          "many",
+          "much"
+        ]
+      },
+      {
+        "sentence": "May I ___ your pen?",
+        "answer": "borrow",
+        "choices": [
+          "borrow",
+          "borrowing",
+          "to borrow",
+          "borrowed"
+        ]
+      },
+      {
+        "sentence": "Can I ___ a receipt?",
+        "answer": "get",
+        "choices": [
+          "get",
+          "getting",
+          "to get",
+          "got"
+        ]
+      },
+      {
+        "sentence": "May I ___ in?",
+        "answer": "come",
+        "choices": [
+          "come",
+          "coming",
+          "to come",
+          "came"
+        ]
+      },
+      {
+        "sentence": "Can I ___ you a question?",
+        "answer": "ask",
+        "choices": [
+          "ask",
+          "asking",
+          "to ask",
+          "asked"
+        ]
+      }
+    ]
   }
 ]

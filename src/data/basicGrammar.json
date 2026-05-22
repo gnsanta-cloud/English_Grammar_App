@@ -856,5 +856,477 @@
         ]
       }
     ]
+  },
+  {
+    "title": "be동사 (현재)",
+    "rule": "I→am, You/We/They→are, He/She/It→is.",
+    "example": "I am a student.",
+    "exampleKo": "나는 학생입니다.",
+    "tip": "be동사는 상태·신분을 나타냅니다.",
+    "quizzes": [
+      {
+        "sentence": "She ___ my teacher.",
+        "answer": "is",
+        "choices": [
+          "is",
+          "are",
+          "am",
+          "be"
+        ]
+      },
+      {
+        "sentence": "We ___ friends.",
+        "answer": "are",
+        "choices": [
+          "are",
+          "is",
+          "am",
+          "be"
+        ]
+      },
+      {
+        "sentence": "___ you okay?",
+        "answer": "Are",
+        "choices": [
+          "Are",
+          "Is",
+          "Am",
+          "Do"
+        ]
+      },
+      {
+        "sentence": "He ___ not at home.",
+        "answer": "is",
+        "choices": [
+          "is",
+          "are",
+          "am",
+          "do"
+        ]
+      },
+      {
+        "sentence": "I ___ happy today.",
+        "answer": "am",
+        "choices": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "be동사 (과거)",
+    "rule": "I/He/She/It→was, You/We/They→were.",
+    "example": "It was cold yesterday.",
+    "exampleKo": "어제는 추웠습니다.",
+    "tip": "과거 시점과 함께 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "I ___ at school.",
+        "answer": "was",
+        "choices": [
+          "was",
+          "were",
+          "am",
+          "is"
+        ]
+      },
+      {
+        "sentence": "They ___ tired.",
+        "answer": "were",
+        "choices": [
+          "were",
+          "was",
+          "are",
+          "is"
+        ]
+      },
+      {
+        "sentence": "___ he sick?",
+        "answer": "Was",
+        "choices": [
+          "Was",
+          "Were",
+          "Is",
+          "Did"
+        ]
+      },
+      {
+        "sentence": "We ___ not late.",
+        "answer": "were",
+        "choices": [
+          "were",
+          "was",
+          "are",
+          "is"
+        ]
+      },
+      {
+        "sentence": "She ___ happy then.",
+        "answer": "was",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "일반동사 (현재)",
+    "rule": "He/She/It + 동사-s. I/You/We/They + 동사원형.",
+    "example": "He plays soccer.",
+    "exampleKo": "그는 축구를 합니다.",
+    "tip": "3인칭 단수에 -s를 붙입니다.",
+    "quizzes": [
+      {
+        "sentence": "She ___ English well.",
+        "answer": "speaks",
+        "choices": [
+          "speaks",
+          "speak",
+          "speaking",
+          "spoke"
+        ]
+      },
+      {
+        "sentence": "They ___ TV every night.",
+        "answer": "watch",
+        "choices": [
+          "watch",
+          "watches",
+          "watching",
+          "watched"
+        ]
+      },
+      {
+        "sentence": "___ he like pizza?",
+        "answer": "Does",
+        "choices": [
+          "Does",
+          "Do",
+          "Is",
+          "Are"
+        ]
+      },
+      {
+        "sentence": "I ___ not eat meat.",
+        "answer": "do",
+        "choices": [
+          "do",
+          "does",
+          "am",
+          "is"
+        ]
+      },
+      {
+        "sentence": "We ___ to school by bus.",
+        "answer": "go",
+        "choices": [
+          "go",
+          "goes",
+          "going",
+          "went"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "과거 시제",
+    "rule": "규칙: -ed. 불규칙: went, saw, had 등.",
+    "example": "I visited my grandma last week.",
+    "exampleKo": "지난주에 할머니를 방문했습니다.",
+    "tip": "yesterday, last year 등과 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "We ___ a movie yesterday.",
+        "answer": "watched",
+        "choices": [
+          "watched",
+          "watch",
+          "watching",
+          "watches"
+        ]
+      },
+      {
+        "sentence": "She ___ to Paris.",
+        "answer": "went",
+        "choices": [
+          "went",
+          "go",
+          "goes",
+          "going"
+        ]
+      },
+      {
+        "sentence": "___ you finish homework?",
+        "answer": "Did",
+        "choices": [
+          "Did",
+          "Do",
+          "Does",
+          "Are"
+        ]
+      },
+      {
+        "sentence": "He ___ not call me.",
+        "answer": "did",
+        "choices": [
+          "did",
+          "does",
+          "do",
+          "was"
+        ]
+      },
+      {
+        "sentence": "They ___ happy.",
+        "answer": "were",
+        "choices": [
+          "were",
+          "was",
+          "are",
+          "is"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "관사 a·an·the",
+    "rule": "a/an: 처음·하나. the: 특정·알려진 것.",
+    "example": "I need an umbrella.",
+    "exampleKo": "우산이 필요해요.",
+    "tip": "an은 모음 소리 앞에 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "She is ___ honest girl.",
+        "answer": "an",
+        "choices": [
+          "an",
+          "a",
+          "the",
+          "some"
+        ]
+      },
+      {
+        "sentence": "___ sun is bright.",
+        "answer": "The",
+        "choices": [
+          "The",
+          "A",
+          "An",
+          "Some"
+        ]
+      },
+      {
+        "sentence": "I bought ___ new phone.",
+        "answer": "a",
+        "choices": [
+          "a",
+          "an",
+          "the",
+          "some"
+        ]
+      },
+      {
+        "sentence": "Open ___ door, please.",
+        "answer": "the",
+        "choices": [
+          "the",
+          "a",
+          "an",
+          "some"
+        ]
+      },
+      {
+        "sentence": "He wants ___ apple.",
+        "answer": "an",
+        "choices": [
+          "an",
+          "a",
+          "the",
+          "some"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "전치사 in·on·at",
+    "rule": "in: 안·월·년. on: 표면·요일. at: 시각·장소.",
+    "example": "The class starts at 9.",
+    "exampleKo": "수업은 9시에 시작합니다.",
+    "tip": "고정 표현은 암기가 필요합니다.",
+    "quizzes": [
+      {
+        "sentence": "I was born ___ May.",
+        "answer": "in",
+        "choices": [
+          "in",
+          "on",
+          "at",
+          "to"
+        ]
+      },
+      {
+        "sentence": "See you ___ Monday.",
+        "answer": "on",
+        "choices": [
+          "on",
+          "in",
+          "at",
+          "to"
+        ]
+      },
+      {
+        "sentence": "Meet me ___ the station.",
+        "answer": "at",
+        "choices": [
+          "at",
+          "in",
+          "on",
+          "to"
+        ]
+      },
+      {
+        "sentence": "The keys are ___ the bag.",
+        "answer": "in",
+        "choices": [
+          "in",
+          "on",
+          "at",
+          "to"
+        ]
+      },
+      {
+        "sentence": "The book is ___ the desk.",
+        "answer": "on",
+        "choices": [
+          "on",
+          "in",
+          "at",
+          "to"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "명사 복수·소유격",
+    "rule": "복수: -s/-es. 소유격: 's / students'.",
+    "example": "My brother's room is small.",
+    "exampleKo": "내 남동생 방은 작다.",
+    "tip": "불규칙 복수: children, people, teeth.",
+    "quizzes": [
+      {
+        "sentence": "There are three ___ in the box.",
+        "answer": "books",
+        "choices": [
+          "books",
+          "book",
+          "book's",
+          "bookes"
+        ]
+      },
+      {
+        "sentence": "This is Tom ___ bike.",
+        "answer": "Tom's",
+        "choices": [
+          "Tom's",
+          "Toms",
+          "Toms'",
+          "Tom"
+        ]
+      },
+      {
+        "sentence": "The ___ are playing.",
+        "answer": "children",
+        "choices": [
+          "children",
+          "childs",
+          "child",
+          "childes"
+        ]
+      },
+      {
+        "sentence": "I have two ___.",
+        "answer": "sisters",
+        "choices": [
+          "sisters",
+          "sister",
+          "sister's",
+          "sisteres"
+        ]
+      },
+      {
+        "sentence": "The students' ___ are open.",
+        "answer": "books",
+        "choices": [
+          "books",
+          "book",
+          "book's",
+          "bookes"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "의문사 What·Where",
+    "rule": "What: 무엇. Where: 어디. 의문사 + do/does/be.",
+    "example": "What is your name?",
+    "exampleKo": "이름이 뭐예요?",
+    "tip": "의문사는 문장 앞에 옵니다.",
+    "quizzes": [
+      {
+        "sentence": "___ is your phone number?",
+        "answer": "What",
+        "choices": [
+          "What",
+          "Where",
+          "When",
+          "Who"
+        ]
+      },
+      {
+        "sentence": "___ do you live?",
+        "answer": "Where",
+        "choices": [
+          "Where",
+          "What",
+          "When",
+          "Who"
+        ]
+      },
+      {
+        "sentence": "___ color do you like?",
+        "answer": "What",
+        "choices": [
+          "What",
+          "Where",
+          "When",
+          "Who"
+        ]
+      },
+      {
+        "sentence": "___ are my keys?",
+        "answer": "Where",
+        "choices": [
+          "Where",
+          "What",
+          "When",
+          "Who"
+        ]
+      },
+      {
+        "sentence": "___ is she doing?",
+        "answer": "What",
+        "choices": [
+          "What",
+          "Where",
+          "When",
+          "Who"
+        ]
+      }
+    ]
   }
 ]

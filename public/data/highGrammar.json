@@ -1129,5 +1129,595 @@
         ]
       }
     ]
+  },
+  {
+    "title": "주어-동사 수 일치",
+    "rule": "주어가 단수면 동사 단수, 복수면 복수. There is/are, each/every + 단수.",
+    "example": "Each of the students has a book.",
+    "exampleKo": "학생 각각이 책을 가지고 있다.",
+    "tip": "수식어구가 길어도 동사는 주어와 맞춥니다.",
+    "quizzes": [
+      {
+        "sentence": "The list of names ___ on the desk.",
+        "answer": "is",
+        "choices": [
+          "is",
+          "are",
+          "were",
+          "have"
+        ]
+      },
+      {
+        "sentence": "One of my friends ___ sick.",
+        "answer": "is",
+        "choices": [
+          "is",
+          "are",
+          "were",
+          "have"
+        ]
+      },
+      {
+        "sentence": "There ___ many reasons.",
+        "answer": "are",
+        "choices": [
+          "are",
+          "is",
+          "was",
+          "be"
+        ]
+      },
+      {
+        "sentence": "Everybody ___ ready.",
+        "answer": "is",
+        "choices": [
+          "is",
+          "are",
+          "were",
+          "have"
+        ]
+      },
+      {
+        "sentence": "The news ___ surprising.",
+        "answer": "is",
+        "choices": [
+          "is",
+          "are",
+          "were",
+          "have"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "대명사 일치",
+    "rule": "선행사와 대명사·관계사의 수·인칭 일치. it/they, his/her/their.",
+    "example": "If a student fails, he or she must retake.",
+    "exampleKo": "학생이 떨어지면 재시험을 봐야 한다.",
+    "tip": "every + 단수 대명사가 흔합니다.",
+    "quizzes": [
+      {
+        "sentence": "Each student must bring ___ own lunch.",
+        "answer": "his or her",
+        "choices": [
+          "his or her",
+          "their",
+          "its",
+          "our"
+        ]
+      },
+      {
+        "sentence": "The students said ___ would come.",
+        "answer": "they",
+        "choices": [
+          "they",
+          "he",
+          "it",
+          "she"
+        ]
+      },
+      {
+        "sentence": "Someone left ___ bag.",
+        "answer": "his or her",
+        "choices": [
+          "his or her",
+          "their",
+          "its",
+          "our"
+        ]
+      },
+      {
+        "sentence": "The team won ___ first game.",
+        "answer": "its",
+        "choices": [
+          "its",
+          "their",
+          "his",
+          "her"
+        ]
+      },
+      {
+        "sentence": "Neither Tom nor Jerry ___ late.",
+        "answer": "was",
+        "choices": [
+          "was",
+          "were",
+          "are",
+          "is"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "병렬 구조",
+    "rule": "and/or/both A and B: 같은 품사·형태 나열.",
+    "example": "She likes reading, writing, and drawing.",
+    "exampleKo": "그녀는 읽기, 쓰기, 그리기를 좋아한다.",
+    "tip": "not only A but also B도 병렬입니다.",
+    "quizzes": [
+      {
+        "sentence": "He wants to travel, ___, and relax.",
+        "answer": "study",
+        "choices": [
+          "study",
+          "studying",
+          "studied",
+          "studies"
+        ]
+      },
+      {
+        "sentence": "The job requires skill, ___, and patience.",
+        "answer": "experience",
+        "choices": [
+          "experience",
+          "experienced",
+          "experiencing",
+          "experiences"
+        ]
+      },
+      {
+        "sentence": "She is smart, kind, and ___.",
+        "answer": "funny",
+        "choices": [
+          "funny",
+          "fun",
+          "funnily",
+          "funnier"
+        ]
+      },
+      {
+        "sentence": "I can neither sing ___ dance.",
+        "answer": "nor",
+        "choices": [
+          "nor",
+          "or",
+          "and",
+          "but"
+        ]
+      },
+      {
+        "sentence": "Not only did he win, ___ he broke a record.",
+        "answer": "but",
+        "choices": [
+          "but",
+          "and",
+          "or",
+          "so"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "현재완료진행",
+    "rule": "have/has been + -ing. ~해 오고 있다.",
+    "example": "I have been studying for two hours.",
+    "exampleKo": "두 시간째 공부하고 있습니다.",
+    "tip": "for/since와 자주 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "She has been ___ all morning.",
+        "answer": "working",
+        "choices": [
+          "working",
+          "work",
+          "worked",
+          "works"
+        ]
+      },
+      {
+        "sentence": "How long ___ you been waiting?",
+        "answer": "have",
+        "choices": [
+          "have",
+          "has",
+          "did",
+          "are"
+        ]
+      },
+      {
+        "sentence": "They have ___ been friends since 2010.",
+        "answer": "been",
+        "choices": [
+          "been",
+          "be",
+          "being",
+          "was"
+        ]
+      },
+      {
+        "sentence": "It has been ___ for hours.",
+        "answer": "raining",
+        "choices": [
+          "raining",
+          "rain",
+          "rained",
+          "rains"
+        ]
+      },
+      {
+        "sentence": "I have not been ___ well.",
+        "answer": "feeling",
+        "choices": [
+          "feeling",
+          "feel",
+          "felt",
+          "feels"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "조동사 + have p.p.",
+    "rule": "should/could/might have + p.p. 과거에 대한 추측·후회.",
+    "example": "You should have told me earlier.",
+    "exampleKo": "더 일찍 말해 줬어야 했어.",
+    "tip": "could have = ~할 수도 있었다(안 함).",
+    "quizzes": [
+      {
+        "sentence": "You ___ have called me.",
+        "answer": "should",
+        "choices": [
+          "should",
+          "will",
+          "can",
+          "may"
+        ]
+      },
+      {
+        "sentence": "She ___ have forgotten.",
+        "answer": "might",
+        "choices": [
+          "might",
+          "will",
+          "can",
+          "must"
+        ]
+      },
+      {
+        "sentence": "He ___ have been tired.",
+        "answer": "must",
+        "choices": [
+          "must",
+          "will",
+          "can",
+          "may"
+        ]
+      },
+      {
+        "sentence": "We ___ have left earlier.",
+        "answer": "could",
+        "choices": [
+          "could",
+          "will",
+          "can",
+          "must"
+        ]
+      },
+      {
+        "sentence": "They ___ not have known.",
+        "answer": "might",
+        "choices": [
+          "might",
+          "will",
+          "can",
+          "must"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "현재·과거 분사",
+    "rule": "현재분사 -ing: 능동·진행. 과거분사 p.p.: 수동·완료.",
+    "example": "The broken window needs repair.",
+    "exampleKo": "깨진 창문은 수리가 필요하다.",
+    "tip": "분사구문은 주어 생략이 많습니다.",
+    "quizzes": [
+      {
+        "sentence": "The girl ___ in red is my sister.",
+        "answer": "dressed",
+        "choices": [
+          "dressed",
+          "dressing",
+          "dress",
+          "dresses"
+        ]
+      },
+      {
+        "sentence": "___ from the hill, we saw the sea.",
+        "answer": "Standing",
+        "choices": [
+          "Standing",
+          "Stood",
+          "Stand",
+          "Stands"
+        ]
+      },
+      {
+        "sentence": "Written in 1990, the book is still popular.",
+        "answer": "Written",
+        "choices": [
+          "Written",
+          "Writing",
+          "Write",
+          "Writes"
+        ]
+      },
+      {
+        "sentence": "The ___ students waited outside.",
+        "answer": "excited",
+        "choices": [
+          "excited",
+          "exciting",
+          "excite",
+          "excites"
+        ]
+      },
+      {
+        "sentence": "___ tired, he went to bed.",
+        "answer": "Feeling",
+        "choices": [
+          "Feeling",
+          "Felt",
+          "Feel",
+          "Feels"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "관계대명사 생략",
+    "rule": "목적격 that/whom/which 생략 가능. the book (that) I read.",
+    "example": "This is the song I love.",
+    "exampleKo": "이게 내가 좋아하는 노래야.",
+    "tip": "주격 관계대명사는 생략하지 않습니다.",
+    "quizzes": [
+      {
+        "sentence": "The man ___ I met was friendly.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "where",
+          "when"
+        ]
+      },
+      {
+        "sentence": "Everything ___ he said was true.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "where",
+          "whose"
+        ]
+      },
+      {
+        "sentence": "The place ___ we visited was beautiful.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "whose",
+          "when"
+        ]
+      },
+      {
+        "sentence": "The reason ___ he left is unclear.",
+        "answer": "why",
+        "choices": [
+          "why",
+          "which",
+          "who",
+          "where"
+        ]
+      },
+      {
+        "sentence": "The way ___ she sings is unique.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "where",
+          "when"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Not only 도치",
+    "rule": "Not only + 조동사/동사 + 주어. 강조 도치.",
+    "example": "Not only did he apologize, but he also helped.",
+    "exampleKo": "그는 사과할 뿐 아니라 도와주기도 했다.",
+    "tip": "부정어·Not only 뒤에는 의문문 어순입니다.",
+    "quizzes": [
+      {
+        "sentence": "Not only ___ she sing, but she also dances.",
+        "answer": "does",
+        "choices": [
+          "does",
+          "do",
+          "did",
+          "is"
+        ]
+      },
+      {
+        "sentence": "Never ___ I seen such a view.",
+        "answer": "have",
+        "choices": [
+          "have",
+          "has",
+          "had",
+          "do"
+        ]
+      },
+      {
+        "sentence": "Hardly ___ he arrived when it rained.",
+        "answer": "had",
+        "choices": [
+          "had",
+          "has",
+          "have",
+          "was"
+        ]
+      },
+      {
+        "sentence": "Seldom ___ we eat out.",
+        "answer": "do",
+        "choices": [
+          "do",
+          "does",
+          "did",
+          "are"
+        ]
+      },
+      {
+        "sentence": "Not only was it cheap, ___ it was good.",
+        "answer": "but",
+        "choices": [
+          "but",
+          "and",
+          "or",
+          "so"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "준동사 (명사적)",
+    "rule": "to V / V-ing가 주어·목적어·보어. 동사가 아닌 명사 역할.",
+    "example": "To err is human.",
+    "exampleKo": "실수는 인간의 본성이다.",
+    "tip": "it is ~ to V에서 to부정사가 진주어입니다.",
+    "quizzes": [
+      {
+        "sentence": "___ English takes time.",
+        "answer": "Learning",
+        "choices": [
+          "Learning",
+          "Learn",
+          "To learn",
+          "Learned"
+        ]
+      },
+      {
+        "sentence": "It is important ___ polite.",
+        "answer": "to be",
+        "choices": [
+          "to be",
+          "being",
+          "be",
+          "been"
+        ]
+      },
+      {
+        "sentence": "She enjoys ___ novels.",
+        "answer": "reading",
+        "choices": [
+          "reading",
+          "read",
+          "to read",
+          "reads"
+        ]
+      },
+      {
+        "sentence": "His dream is ___ a doctor.",
+        "answer": "to become",
+        "choices": [
+          "to become",
+          "becoming",
+          "become",
+          "became"
+        ]
+      },
+      {
+        "sentence": "I want ___ home early.",
+        "answer": "to go",
+        "choices": [
+          "to go",
+          "going",
+          "go",
+          "went"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "형용사 + 전치사",
+    "rule": "afraid of, good at, interested in, tired of, famous for.",
+    "example": "She is good at math.",
+    "exampleKo": "그녀는 수학을 잘한다.",
+    "tip": "형용사마다 어울리는 전치사가 정해져 있습니다.",
+    "quizzes": [
+      {
+        "sentence": "He is afraid ___ dogs.",
+        "answer": "of",
+        "choices": [
+          "of",
+          "at",
+          "in",
+          "for"
+        ]
+      },
+      {
+        "sentence": "I'm interested ___ science.",
+        "answer": "in",
+        "choices": [
+          "in",
+          "on",
+          "at",
+          "for"
+        ]
+      },
+      {
+        "sentence": "They are tired ___ waiting.",
+        "answer": "of",
+        "choices": [
+          "of",
+          "from",
+          "at",
+          "in"
+        ]
+      },
+      {
+        "sentence": "She is famous ___ her songs.",
+        "answer": "for",
+        "choices": [
+          "for",
+          "of",
+          "at",
+          "in"
+        ]
+      },
+      {
+        "sentence": "We are proud ___ our team.",
+        "answer": "of",
+        "choices": [
+          "of",
+          "for",
+          "at",
+          "in"
+        ]
+      }
+    ]
   }
 ]

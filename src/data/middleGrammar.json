@@ -1207,5 +1207,772 @@
         ]
       }
     ]
+  },
+  {
+    "title": "be동사 (과거)",
+    "rule": "I/He/She/It→was, You/We/They→were. 부정 wasn't/weren't.",
+    "example": "They were at home yesterday.",
+    "exampleKo": "그들은 어제 집에 있었습니다.",
+    "tip": "과거 시점 yesterday, last week와 함께 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "I ___ tired last night.",
+        "answer": "was",
+        "choices": [
+          "was",
+          "were",
+          "am",
+          "is"
+        ]
+      },
+      {
+        "sentence": "They ___ at the park.",
+        "answer": "were",
+        "choices": [
+          "were",
+          "was",
+          "are",
+          "is"
+        ]
+      },
+      {
+        "sentence": "___ she happy then?",
+        "answer": "Was",
+        "choices": [
+          "Was",
+          "Were",
+          "Is",
+          "Did"
+        ]
+      },
+      {
+        "sentence": "We ___ not ready.",
+        "answer": "were",
+        "choices": [
+          "were",
+          "was",
+          "are",
+          "is"
+        ]
+      },
+      {
+        "sentence": "He ___ not here yesterday.",
+        "answer": "wasn't",
+        "choices": [
+          "wasn't",
+          "weren't",
+          "isn't",
+          "didn't"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "재귀대명사",
+    "rule": "myself, yourself, himself, herself, itself, ourselves, themselves.",
+    "example": "She taught herself English.",
+    "exampleKo": "그녀는 스스로 영어를 배웠습니다.",
+    "tip": "주어와 목적어가 같을 때 재귀대명사를 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "He hurt ___ while playing.",
+        "answer": "himself",
+        "choices": [
+          "himself",
+          "his",
+          "him",
+          "he"
+        ]
+      },
+      {
+        "sentence": "We enjoyed ___ at the party.",
+        "answer": "ourselves",
+        "choices": [
+          "ourselves",
+          "our",
+          "us",
+          "we"
+        ]
+      },
+      {
+        "sentence": "Did you make this ___?",
+        "answer": "yourself",
+        "choices": [
+          "yourself",
+          "your",
+          "you",
+          "yours"
+        ]
+      },
+      {
+        "sentence": "The cat cleaned ___.",
+        "answer": "itself",
+        "choices": [
+          "itself",
+          "its",
+          "it",
+          "it's"
+        ]
+      },
+      {
+        "sentence": "They blamed ___.",
+        "answer": "themselves",
+        "choices": [
+          "themselves",
+          "their",
+          "them",
+          "they"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "명령문·청유문",
+    "rule": "명령: 동사원형. 청유: Let's / Shall we / Why don't we.",
+    "example": "Open the window, please.",
+    "exampleKo": "창문을 열어 주세요.",
+    "tip": "주어 you는 생략합니다.",
+    "quizzes": [
+      {
+        "sentence": "___ quiet, please.",
+        "answer": "Be",
+        "choices": [
+          "Be",
+          "Are",
+          "Is",
+          "Being"
+        ]
+      },
+      {
+        "sentence": "Don't ___ late.",
+        "answer": "be",
+        "choices": [
+          "be",
+          "are",
+          "is",
+          "being"
+        ]
+      },
+      {
+        "sentence": "___ we start now?",
+        "answer": "Shall",
+        "choices": [
+          "Shall",
+          "Will",
+          "Do",
+          "Are"
+        ]
+      },
+      {
+        "sentence": "___ go for a walk.",
+        "answer": "Let's",
+        "choices": [
+          "Let's",
+          "Let",
+          "Lets",
+          "We"
+        ]
+      },
+      {
+        "sentence": "___ touch that wire.",
+        "answer": "Don't",
+        "choices": [
+          "Don't",
+          "Doesn't",
+          "Didn't",
+          "Not"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "부가의문문",
+    "rule": "긍정문 + 부정 tag / 부정문 + 긍정 tag. 주어·동사 순서 바뀜.",
+    "example": "You like music, don't you?",
+    "exampleKo": "음악 좋아하죠?",
+    "tip": "tag는 앞 문장의 시제·조동사와 맞춥니다.",
+    "quizzes": [
+      {
+        "sentence": "She is kind, ___ she?",
+        "answer": "isn't",
+        "choices": [
+          "isn't",
+          "doesn't",
+          "wasn't",
+          "aren't"
+        ]
+      },
+      {
+        "sentence": "They don't know, ___ they?",
+        "answer": "do",
+        "choices": [
+          "do",
+          "don't",
+          "did",
+          "are"
+        ]
+      },
+      {
+        "sentence": "He can swim, ___ he?",
+        "answer": "can't",
+        "choices": [
+          "can't",
+          "doesn't",
+          "isn't",
+          "won't"
+        ]
+      },
+      {
+        "sentence": "You went home, ___ you?",
+        "answer": "didn't",
+        "choices": [
+          "didn't",
+          "don't",
+          "weren't",
+          "isn't"
+        ]
+      },
+      {
+        "sentence": "We're late, ___ we?",
+        "answer": "aren't",
+        "choices": [
+          "aren't",
+          "don't",
+          "isn't",
+          "weren't"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "지각동사",
+    "rule": "see/hear/watch + 목적어 + 동사원형/-ing. 느낌·지각.",
+    "example": "I saw him cross the street.",
+    "exampleKo": "나는 그가 길을 건너는 것을 봤다.",
+    "tip": "원형은 전체 동작, -ing는 진행 중인 모습입니다.",
+    "quizzes": [
+      {
+        "sentence": "I heard her ___ the piano.",
+        "answer": "play",
+        "choices": [
+          "play",
+          "plays",
+          "to play",
+          "played"
+        ]
+      },
+      {
+        "sentence": "We watched them ___.",
+        "answer": "running",
+        "choices": [
+          "running",
+          "run",
+          "to run",
+          "ran"
+        ]
+      },
+      {
+        "sentence": "Did you see it ___?",
+        "answer": "fall",
+        "choices": [
+          "fall",
+          "falls",
+          "to fall",
+          "fell"
+        ]
+      },
+      {
+        "sentence": "She felt the floor ___.",
+        "answer": "shake",
+        "choices": [
+          "shake",
+          "shakes",
+          "shaking",
+          "shook"
+        ]
+      },
+      {
+        "sentence": "I noticed him ___ early.",
+        "answer": "leave",
+        "choices": [
+          "leave",
+          "leaves",
+          "leaving",
+          "left"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "4·5형식 문장",
+    "rule": "4형식: give/tell + 사람 + 것. 5형식: make/find + O + 형용사/to V.",
+    "example": "She gave me a book.",
+    "exampleKo": "그녀는 나에게 책을 주었다.",
+    "tip": "4형식은 간접목적어+직접목적어 순서가 중요합니다.",
+    "quizzes": [
+      {
+        "sentence": "He told ___ the truth.",
+        "answer": "us",
+        "choices": [
+          "us",
+          "we",
+          "our",
+          "to us"
+        ]
+      },
+      {
+        "sentence": "Mom made me ___ my room.",
+        "answer": "clean",
+        "choices": [
+          "clean",
+          "cleaning",
+          "to clean",
+          "cleaned"
+        ]
+      },
+      {
+        "sentence": "I found the test ___.",
+        "answer": "easy",
+        "choices": [
+          "easy",
+          "easily",
+          "ease",
+          "easier"
+        ]
+      },
+      {
+        "sentence": "Can you lend ___ your pen?",
+        "answer": "me",
+        "choices": [
+          "me",
+          "I",
+          "my",
+          "mine"
+        ]
+      },
+      {
+        "sentence": "They kept the door ___.",
+        "answer": "open",
+        "choices": [
+          "open",
+          "opened",
+          "opening",
+          "opens"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "접속사 when·while",
+    "rule": "when: ~할 때, while: ~하는 동안. 시간의 부사절.",
+    "example": "Call me when you arrive.",
+    "exampleKo": "도착하면 전화해 주세요.",
+    "tip": "when/while 뒤 절의 시제는 문맥에 맞게 선택합니다.",
+    "quizzes": [
+      {
+        "sentence": "I was reading ___ he called.",
+        "answer": "when",
+        "choices": [
+          "when",
+          "while",
+          "because",
+          "if"
+        ]
+      },
+      {
+        "sentence": "___ she was cooking, I set the table.",
+        "answer": "While",
+        "choices": [
+          "While",
+          "When",
+          "Because",
+          "If"
+        ]
+      },
+      {
+        "sentence": "Wash your hands ___ you eat.",
+        "answer": "before",
+        "choices": [
+          "before",
+          "after",
+          "while",
+          "when"
+        ]
+      },
+      {
+        "sentence": "___ I finish, I'll call you.",
+        "answer": "When",
+        "choices": [
+          "When",
+          "While",
+          "Because",
+          "If"
+        ]
+      },
+      {
+        "sentence": "He fell asleep ___ watching TV.",
+        "answer": "while",
+        "choices": [
+          "while",
+          "when",
+          "because",
+          "if"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "접속사 if (조건)",
+    "rule": "if + 현재: 실제 조건. If it rains, we will stay home.",
+    "example": "If you study, you will pass.",
+    "exampleKo": "공부하면 합격할 거예요.",
+    "tip": "if절에는 will을 보통 쓰지 않습니다(미래 조건).",
+    "quizzes": [
+      {
+        "sentence": "If it ___, we will cancel.",
+        "answer": "rains",
+        "choices": [
+          "rains",
+          "will rain",
+          "rained",
+          "rain"
+        ]
+      },
+      {
+        "sentence": "I will help you if you ___.",
+        "answer": "ask",
+        "choices": [
+          "ask",
+          "will ask",
+          "asked",
+          "asking"
+        ]
+      },
+      {
+        "sentence": "If she ___ busy, call later.",
+        "answer": "is",
+        "choices": [
+          "is",
+          "will be",
+          "was",
+          "be"
+        ]
+      },
+      {
+        "sentence": "What will you do if he ___?",
+        "answer": "comes",
+        "choices": [
+          "comes",
+          "will come",
+          "came",
+          "come"
+        ]
+      },
+      {
+        "sentence": "If they ___ hard, they succeed.",
+        "answer": "work",
+        "choices": [
+          "work",
+          "will work",
+          "worked",
+          "working"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "주격 관계대명사",
+    "rule": "who(사람), which(사물), that(둘 다). 앞 명사 수식.",
+    "example": "The boy who won is my friend.",
+    "exampleKo": "우승한 소년은 내 친구입니다.",
+    "tip": "관계대명사 뒤에는 불완전한 절이 옵니다.",
+    "quizzes": [
+      {
+        "sentence": "The girl ___ sings well is Lisa.",
+        "answer": "who",
+        "choices": [
+          "who",
+          "which",
+          "where",
+          "when"
+        ]
+      },
+      {
+        "sentence": "This is the book ___ I bought.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "where",
+          "when"
+        ]
+      },
+      {
+        "sentence": "Students ___ study hard succeed.",
+        "answer": "who",
+        "choices": [
+          "who",
+          "which",
+          "where",
+          "whose"
+        ]
+      },
+      {
+        "sentence": "The phone ___ is on the desk is mine.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "where",
+          "whose"
+        ]
+      },
+      {
+        "sentence": "Anyone ___ tries can learn.",
+        "answer": "who",
+        "choices": [
+          "who",
+          "which",
+          "where",
+          "when"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "목적격 관계대명사",
+    "rule": "the + 명사 + whom/which/that + 주어 + 동사 (that 생략 가능).",
+    "example": "The man (whom) I met was kind.",
+    "exampleKo": "내가 만난 남자는 친절했다.",
+    "tip": "목적격은 관계대명사가 목적어 역할합니다.",
+    "quizzes": [
+      {
+        "sentence": "The movie ___ we watched was fun.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "where",
+          "when"
+        ]
+      },
+      {
+        "sentence": "The teacher ___ I respect retired.",
+        "answer": "whom",
+        "choices": [
+          "whom",
+          "which",
+          "where",
+          "when"
+        ]
+      },
+      {
+        "sentence": "This is the house ___ they built.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "where",
+          "whose"
+        ]
+      },
+      {
+        "sentence": "The friends ___ I invited came.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "where",
+          "when"
+        ]
+      },
+      {
+        "sentence": "The song ___ she sang was popular.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "where",
+          "whose"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "불규칙 과거동사",
+    "rule": "go→went, see→saw, have→had, make→made, take→took 등.",
+    "example": "She went to school by bus.",
+    "exampleKo": "그녀는 버스로 학교에 갔다.",
+    "tip": "불규칙 동사는 암기가 필요합니다.",
+    "quizzes": [
+      {
+        "sentence": "We ___ to the beach last summer.",
+        "answer": "went",
+        "choices": [
+          "went",
+          "go",
+          "goes",
+          "going"
+        ]
+      },
+      {
+        "sentence": "I ___ a great movie yesterday.",
+        "answer": "saw",
+        "choices": [
+          "saw",
+          "see",
+          "sees",
+          "seeing"
+        ]
+      },
+      {
+        "sentence": "He ___ his homework at night.",
+        "answer": "did",
+        "choices": [
+          "did",
+          "do",
+          "does",
+          "doing"
+        ]
+      },
+      {
+        "sentence": "They ___ a new friend.",
+        "answer": "made",
+        "choices": [
+          "made",
+          "make",
+          "makes",
+          "making"
+        ]
+      },
+      {
+        "sentence": "She ___ the bus at 8.",
+        "answer": "took",
+        "choices": [
+          "took",
+          "take",
+          "takes",
+          "taking"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "to부정사 (부사적)",
+    "rule": "목적: to V. 결과: too ~ to. 원인: 형용사 + to V.",
+    "example": "I came here to study English.",
+    "exampleKo": "영어 공부하려고 여기 왔습니다.",
+    "tip": "in order to = to (더 격식).",
+    "quizzes": [
+      {
+        "sentence": "She ran fast ___ catch the bus.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "ed"
+        ]
+      },
+      {
+        "sentence": "This box is too heavy ___.",
+        "answer": "to carry",
+        "choices": [
+          "to carry",
+          "carrying",
+          "carry",
+          "carried"
+        ]
+      },
+      {
+        "sentence": "I'm glad ___ you.",
+        "answer": "to see",
+        "choices": [
+          "to see",
+          "seeing",
+          "see",
+          "saw"
+        ]
+      },
+      {
+        "sentence": "He was surprised ___ the news.",
+        "answer": "to hear",
+        "choices": [
+          "to hear",
+          "hearing",
+          "hear",
+          "heard"
+        ]
+      },
+      {
+        "sentence": "We left early ___ avoid traffic.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "on"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "현재완료 (완료·결과)",
+    "rule": "have/has + p.p. just, already, yet. 방금·이미·아직.",
+    "example": "I have just finished lunch.",
+    "exampleKo": "방금 점심을 끝냈습니다.",
+    "tip": "결과가 지금까지 이어질 때 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "She has ___ left.",
+        "answer": "already",
+        "choices": [
+          "already",
+          "yet",
+          "ever",
+          "never"
+        ]
+      },
+      {
+        "sentence": "Have you eaten ___?",
+        "answer": "yet",
+        "choices": [
+          "yet",
+          "already",
+          "just",
+          "ever"
+        ]
+      },
+      {
+        "sentence": "I have ___ started.",
+        "answer": "just",
+        "choices": [
+          "just",
+          "yet",
+          "ever",
+          "never"
+        ]
+      },
+      {
+        "sentence": "They haven't arrived ___.",
+        "answer": "yet",
+        "choices": [
+          "yet",
+          "already",
+          "just",
+          "ever"
+        ]
+      },
+      {
+        "sentence": "He has ___ called back.",
+        "answer": "already",
+        "choices": [
+          "already",
+          "yet",
+          "ever",
+          "never"
+        ]
+      }
+    ]
   }
 ]
