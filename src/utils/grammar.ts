@@ -1,10 +1,19 @@
-import type { GrammarLesson, GrammarLevel } from '../types';
+import type { GrammarLesson, GrammarLevel, GrammarQuizItem, GrammarExample } from '../types';
+
+interface RawQuiz {
+  sentence: string;
+  answer: string;
+  choices: string[];
+}
 
 interface RawLesson {
   title: string;
   rule: string;
+  tip?: string;
   example: string;
   exampleKo: string;
+  examples?: GrammarExample[];
+  quizzes: RawQuiz[];
 }
 
 const FILES: Record<GrammarLevel, string> = {
@@ -21,8 +30,11 @@ function toLessons(data: RawLesson[], level: GrammarLevel): GrammarLesson[] {
     id: `${level}-${index}`,
     title: item.title,
     rule: item.rule,
+    tip: item.tip,
     example: item.example,
     exampleKo: item.exampleKo,
+    examples: item.examples,
+    quizzes: item.quizzes,
     level,
   }));
 }
@@ -61,4 +73,8 @@ export function getLevelLabel(level: GrammarLevel): string {
     practical: '실용 문법',
   };
   return labels[level];
+}
+
+export function getAllQuizItems(level: GrammarLevel): GrammarQuizItem[] {
+  return getLessonsByLevel(level).flatMap((l) => l.quizzes);
 }

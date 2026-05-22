@@ -1,92 +1,1133 @@
 [
   {
     "title": "현재완료 (경험)",
-    "rule": "have/has + p.p. ever/never/before과 함께 경험",
+    "rule": "have/has + p.p. ever, never, before, once, twice.",
     "example": "I have been to London twice.",
-    "exampleKo": "나는 런던에 두 번 가 본 적이 있다."
+    "exampleKo": "나는 런던에 두 번 가 본 적이 있다.",
+    "tip": "특정 과거 시점 없이 경험을 말할 때 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "I ___ been to London twice.",
+        "answer": "have",
+        "choices": [
+          "have",
+          "has",
+          "had",
+          "was"
+        ]
+      },
+      {
+        "sentence": "She has ___ finished her essay.",
+        "answer": "already",
+        "choices": [
+          "already",
+          "yet",
+          "ever",
+          "never"
+        ]
+      },
+      {
+        "sentence": "Have you ___ tried this app?",
+        "answer": "ever",
+        "choices": [
+          "ever",
+          "never",
+          "yet",
+          "already"
+        ]
+      }
+    ]
   },
   {
     "title": "현재완료 (계속)",
-    "rule": "for/since와 함께 시작부터 지금까지",
+    "rule": "for + 기간, since + 시작점. have/has + p.p.",
     "example": "She has lived here for ten years.",
-    "exampleKo": "그녀는 여기서 10년째 살고 있다."
+    "exampleKo": "그녀는 여기서 10년째 살고 있다.",
+    "tip": "still은 '아직도' 계속을 강조합니다.",
+    "quizzes": [
+      {
+        "sentence": "She has lived here ___ ten years.",
+        "answer": "for",
+        "choices": [
+          "for",
+          "since",
+          "during",
+          "from"
+        ]
+      },
+      {
+        "sentence": "I have worked here ___ 2019.",
+        "answer": "since",
+        "choices": [
+          "since",
+          "for",
+          "during",
+          "in"
+        ]
+      },
+      {
+        "sentence": "They have ___ been friends.",
+        "answer": "always",
+        "choices": [
+          "always",
+          "never",
+          "yet",
+          "already"
+        ]
+      }
+    ]
   },
   {
     "title": "현재완료 (완료·결과)",
-    "rule": "just/already/yet. 막·이미·아직",
+    "rule": "just, already, yet. 막·이미·아직.",
     "example": "He has just finished his homework.",
-    "exampleKo": "그는 방금 숙제를 끝냈다."
+    "exampleKo": "그는 방금 숙제를 끝냈다.",
+    "tip": "yet는 주로 의문·부정문에 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "He has ___ finished his homework.",
+        "answer": "just",
+        "choices": [
+          "just",
+          "yet",
+          "ever",
+          "never"
+        ]
+      },
+      {
+        "sentence": "Have you eaten ___?",
+        "answer": "yet",
+        "choices": [
+          "yet",
+          "just",
+          "already",
+          "ever"
+        ]
+      },
+      {
+        "sentence": "I have ___ seen that film.",
+        "answer": "already",
+        "choices": [
+          "already",
+          "yet",
+          "just",
+          "never"
+        ]
+      }
+    ]
   },
   {
-    "title": "수동태",
-    "rule": "be + p.p. 행위자는 by. 4형식·5형식 주의",
+    "title": "과거완료",
+    "rule": "had + p.p. 과거보다 더 이전의 일.",
+    "example": "When I arrived, the train had left.",
+    "exampleKo": "내가 도착했을 때 기차는 이미 떠났다.",
+    "tip": "과거 사건의 '더 과거'를 나타냅니다.",
+    "quizzes": [
+      {
+        "sentence": "When I arrived, the train ___ left.",
+        "answer": "had",
+        "choices": [
+          "had",
+          "has",
+          "have",
+          "was"
+        ]
+      },
+      {
+        "sentence": "She ___ never seen snow before she moved.",
+        "answer": "had",
+        "choices": [
+          "had",
+          "has",
+          "have",
+          "was"
+        ]
+      },
+      {
+        "sentence": "They ___ finished before we came.",
+        "answer": "had",
+        "choices": [
+          "had",
+          "have",
+          "has",
+          "were"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "미래완료",
+    "rule": "will have + p.p. 미래의 특정 시점까지 완료.",
+    "example": "I will have finished by 6 p.m.",
+    "exampleKo": "오후 6시까지는 끝낼 것이다.",
+    "tip": "by + 시점과 자주 함께 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "I ___ have finished by 6 p.m.",
+        "answer": "will",
+        "choices": [
+          "will",
+          "would",
+          "have",
+          "am"
+        ]
+      },
+      {
+        "sentence": "She ___ have left by then.",
+        "answer": "will",
+        "choices": [
+          "will",
+          "would",
+          "has",
+          "is"
+        ]
+      },
+      {
+        "sentence": "___ you have completed it by Friday?",
+        "answer": "Will",
+        "choices": [
+          "Will",
+          "Would",
+          "Have",
+          "Did"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "수동태 (다양한 시제)",
+    "rule": "be + p.p. 시제는 be동사에 맞춤.",
     "example": "The letter was written by Tom.",
-    "exampleKo": "그 편지는 Tom에 의해 쓰였다."
+    "exampleKo": "그 편지는 Tom에 의해 쓰였다.",
+    "tip": "행위자는 by, 도구는 with를 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "The letter ___ written by Tom.",
+        "answer": "was",
+        "choices": [
+          "was",
+          "is",
+          "were",
+          "wrote"
+        ]
+      },
+      {
+        "sentence": "English ___ spoken worldwide.",
+        "answer": "is",
+        "choices": [
+          "is",
+          "are",
+          "was",
+          "speaks"
+        ]
+      },
+      {
+        "sentence": "The windows ___ being cleaned.",
+        "answer": "are",
+        "choices": [
+          "are",
+          "is",
+          "was",
+          "were"
+        ]
+      }
+    ]
   },
   {
     "title": "관계대명사 who",
-    "rule": "선행사가 사람 → who. 주격·목적격",
+    "rule": "사람 선행사 + who (주격/목적격).",
     "example": "The man who called you is my uncle.",
-    "exampleKo": "너에게 전화한 남자는 내 삼촌이다."
+    "exampleKo": "너에게 전화한 남자는 내 삼촌이다.",
+    "tip": "who는 사람을 꾸밉니다.",
+    "quizzes": [
+      {
+        "sentence": "The man ___ called you is my uncle.",
+        "answer": "who",
+        "choices": [
+          "who",
+          "which",
+          "where",
+          "whose"
+        ]
+      },
+      {
+        "sentence": "Students ___ study hard succeed.",
+        "answer": "who",
+        "choices": [
+          "who",
+          "which",
+          "where",
+          "what"
+        ]
+      },
+      {
+        "sentence": "I know the girl ___ won the prize.",
+        "answer": "who",
+        "choices": [
+          "who",
+          "which",
+          "where",
+          "when"
+        ]
+      }
+    ]
   },
   {
-    "title": "관계대명사 which",
-    "rule": "선행사가 사물 → which/that",
+    "title": "관계대명사 which/that",
+    "rule": "사물 선행사 + which/that.",
     "example": "This is the book which I recommended.",
-    "exampleKo": "이것이 내가 추천한 책이다."
+    "exampleKo": "이것이 내가 추천한 책이다.",
+    "tip": "that은 사람·사물 모두 가능합니다.",
+    "quizzes": [
+      {
+        "sentence": "This is the book ___ I recommended.",
+        "answer": "which",
+        "choices": [
+          "which",
+          "who",
+          "where",
+          "whose"
+        ]
+      },
+      {
+        "sentence": "The phone ___ he bought is new.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "where",
+          "when"
+        ]
+      },
+      {
+        "sentence": "I lost the keys ___ were on the desk.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "where",
+          "whose"
+        ]
+      }
+    ]
   },
   {
     "title": "관계부사 where/when",
-    "rule": "where: 장소, when: 시간. 뒤에 완전한 절",
+    "rule": "where: 장소, when: 시간.",
     "example": "I remember the day when we first met.",
-    "exampleKo": "우리가 처음 만난 날을 기억한다."
+    "exampleKo": "우리가 처음 만난 날을 기억한다.",
+    "tip": "관계부사 뒤에는 완전한 절이 옵니다.",
+    "quizzes": [
+      {
+        "sentence": "This is the café ___ we met.",
+        "answer": "where",
+        "choices": [
+          "where",
+          "which",
+          "who",
+          "whose"
+        ]
+      },
+      {
+        "sentence": "Do you know the reason ___ he left?",
+        "answer": "why",
+        "choices": [
+          "why",
+          "where",
+          "which",
+          "who"
+        ]
+      },
+      {
+        "sentence": "Summer is the season ___ I travel most.",
+        "answer": "when",
+        "choices": [
+          "when",
+          "where",
+          "which",
+          "who"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "whose",
+    "rule": "소유를 나타내는 관계대명사 whose.",
+    "example": "She has a brother whose hobby is chess.",
+    "exampleKo": "그녀에게 체스가 취미인 남동생이 있다.",
+    "tip": "whose + 명사 구조를 기억하세요.",
+    "quizzes": [
+      {
+        "sentence": "She met a writer ___ books are famous.",
+        "answer": "whose",
+        "choices": [
+          "whose",
+          "who",
+          "which",
+          "whom"
+        ]
+      },
+      {
+        "sentence": "I know a girl ___ father is a doctor.",
+        "answer": "whose",
+        "choices": [
+          "whose",
+          "who",
+          "which",
+          "whom"
+        ]
+      },
+      {
+        "sentence": "They live in a house ___ roof is red.",
+        "answer": "whose",
+        "choices": [
+          "whose",
+          "which",
+          "where",
+          "who"
+        ]
+      }
+    ]
   },
   {
     "title": "가정법 과거",
-    "rule": "If + 과거, 주절 would/could + 동사원형. 현재 사실 반대",
+    "rule": "If + 과거, would/could + 동사원형.",
     "example": "If I had time, I would help you.",
-    "exampleKo": "시간이 있다면 도와줄 텐데."
+    "exampleKo": "시간이 있다면 도와줄 텐데.",
+    "tip": "현재 사실과 반대인 상황을 가정합니다.",
+    "quizzes": [
+      {
+        "sentence": "If I ___ time, I would help you.",
+        "answer": "had",
+        "choices": [
+          "had",
+          "have",
+          "has",
+          "will have"
+        ]
+      },
+      {
+        "sentence": "If she ___ here, she would know.",
+        "answer": "were",
+        "choices": [
+          "were",
+          "was",
+          "is",
+          "are"
+        ]
+      },
+      {
+        "sentence": "I would travel more if I ___ rich.",
+        "answer": "were",
+        "choices": [
+          "were",
+          "was",
+          "am",
+          "is"
+        ]
+      }
+    ]
   },
   {
     "title": "가정법 과거완료",
-    "rule": "If + had p.p., would have p.p. 과거 사실 반대",
+    "rule": "If + had p.p., would have p.p.",
     "example": "If she had studied, she would have passed.",
-    "exampleKo": "공부했더라면 합격했을 것이다."
+    "exampleKo": "공부했더라면 합격했을 것이다.",
+    "tip": "과거 사실에 대한 후회·가정입니다.",
+    "quizzes": [
+      {
+        "sentence": "If she ___ studied, she would have passed.",
+        "answer": "had",
+        "choices": [
+          "had",
+          "has",
+          "have",
+          "studies"
+        ]
+      },
+      {
+        "sentence": "I would have called if I ___ known.",
+        "answer": "had",
+        "choices": [
+          "had",
+          "have",
+          "has",
+          "know"
+        ]
+      },
+      {
+        "sentence": "If they ___ left earlier, they would have arrived on time.",
+        "answer": "had",
+        "choices": [
+          "had",
+          "have",
+          "has",
+          "leave"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "가정법 미래 (should)",
+    "rule": "If + should, were to. 만약 ~한다면.",
+    "example": "If you should need help, call me.",
+    "exampleKo": "도움이 필요하면 전화하세요.",
+    "tip": "should는 공식적·가능성 낮은 가정입니다.",
+    "quizzes": [
+      {
+        "sentence": "If you ___ need help, call me.",
+        "answer": "should",
+        "choices": [
+          "should",
+          "will",
+          "would",
+          "can"
+        ]
+      },
+      {
+        "sentence": "If it ___ rain, we will cancel.",
+        "answer": "should",
+        "choices": [
+          "should",
+          "will",
+          "would",
+          "is"
+        ]
+      },
+      {
+        "sentence": "If he ___ arrive late, tell him to wait.",
+        "answer": "should",
+        "choices": [
+          "should",
+          "will",
+          "would",
+          "can"
+        ]
+      }
+    ]
   },
   {
     "title": "분사구문",
-    "rule": "접속사+주어 생략 후 -ing/-ed. 부대상황",
+    "rule": "접속사+주어 생략, -ing/-ed. 부대상황.",
     "example": "Walking down the street, I met an old friend.",
-    "exampleKo": "거리를 걷다가 옛 친구를 만났다."
+    "exampleKo": "거리를 걷다가 옛 친구를 만났다.",
+    "tip": "주어가 같을 때만 분사구문을 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "___ down the street, I met an old friend.",
+        "answer": "Walking",
+        "choices": [
+          "Walking",
+          "Walked",
+          "Walk",
+          "To walk"
+        ]
+      },
+      {
+        "sentence": "___ by the teacher, she felt nervous.",
+        "answer": "Asked",
+        "choices": [
+          "Asked",
+          "Asking",
+          "Ask",
+          "To ask"
+        ]
+      },
+      {
+        "sentence": "___ finished the work, he went home.",
+        "answer": "Having",
+        "choices": [
+          "Having",
+          "Have",
+          "Had",
+          "Has"
+        ]
+      }
+    ]
   },
   {
     "title": "too ~ to",
-    "rule": "too + 형용사/부사 + to V: 너무 ~해서 …할 수 없다",
+    "rule": "too + 형용사/부사 + to V: 너무 ~해서 …못하다.",
     "example": "The box is too heavy to carry.",
-    "exampleKo": "그 상자는 너무 무거워서 들 수 없다."
+    "exampleKo": "그 상자는 너무 무거워서 들 수 없다.",
+    "tip": "too는 부정적 '과도함'입니다.",
+    "quizzes": [
+      {
+        "sentence": "The box is too heavy ___ carry.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "that",
+          "so"
+        ]
+      },
+      {
+        "sentence": "She is too young ___ drive.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "that",
+          "so"
+        ]
+      },
+      {
+        "sentence": "It was too late ___ call him.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "that",
+          "so"
+        ]
+      }
+    ]
   },
   {
     "title": "enough to",
-    "rule": "형용사/부사 + enough + to V: …할 만큼 충분히",
+    "rule": "형용사/부사 + enough + to V.",
     "example": "She is old enough to vote.",
-    "exampleKo": "그녀는 투표할 만큼 나이가 들었다."
+    "exampleKo": "그녀는 투표할 만큼 나이가 들었다.",
+    "tip": "enough는 형용사 뒤·부사 앞에 옵니다.",
+    "quizzes": [
+      {
+        "sentence": "She is old enough ___ vote.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "that",
+          "so"
+        ]
+      },
+      {
+        "sentence": "He ran fast enough ___ win.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "that",
+          "so"
+        ]
+      },
+      {
+        "sentence": "Is it warm enough ___ swim?",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "that",
+          "so"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "so ~ that",
+    "rule": "so + 형용사/부사 + that 절: 너무 ~해서 …하다.",
+    "example": "He was so tired that he fell asleep.",
+    "exampleKo": "그는 너무 피곤해서 잠들었다.",
+    "tip": "such + 명사 + that 도 비슷합니다.",
+    "quizzes": [
+      {
+        "sentence": "He was so tired ___ he fell asleep.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "to",
+          "for",
+          "so"
+        ]
+      },
+      {
+        "sentence": "It was so cold ___ we stayed inside.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "to",
+          "for",
+          "so"
+        ]
+      },
+      {
+        "sentence": "She spoke so fast ___ I couldn't follow.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "to",
+          "for",
+          "so"
+        ]
+      }
+    ]
   },
   {
     "title": "간접의문문",
-    "rule": "의문사+주어+동사 순서. know/tell/wonder 뒤",
+    "rule": "의문사 + 주어 + 동사. know/tell/wonder 뒤.",
     "example": "I don't know where he lives.",
-    "exampleKo": "그가 어디 사는지 모른다."
+    "exampleKo": "그가 어디 사는지 모른다.",
+    "tip": "의문사 뒤에는 평서문 어순입니다.",
+    "quizzes": [
+      {
+        "sentence": "I don't know where he ___.",
+        "answer": "lives",
+        "choices": [
+          "lives",
+          "live",
+          "living",
+          "lived"
+        ]
+      },
+      {
+        "sentence": "Tell me what time the train ___.",
+        "answer": "leaves",
+        "choices": [
+          "leaves",
+          "leave",
+          "left",
+          "leaving"
+        ]
+      },
+      {
+        "sentence": "She asked why I ___ late.",
+        "answer": "was",
+        "choices": [
+          "was",
+          "were",
+          "am",
+          "is"
+        ]
+      }
+    ]
   },
   {
     "title": "It is ~ that 강조",
-    "rule": "It is/was + 강조부분 + that/who + 나머지",
+    "rule": "It is/was + 강조부분 + that/who.",
     "example": "It was Tom that broke the window.",
-    "exampleKo": "창문을 깬 것은 Tom이었다."
+    "exampleKo": "창문을 깬 것은 Tom이었다.",
+    "tip": "강조할 부분을 It is 뒤에 둡니다.",
+    "quizzes": [
+      {
+        "sentence": "It was Tom ___ broke the window.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "which",
+          "where"
+        ]
+      },
+      {
+        "sentence": "It is English ___ we study here.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "who",
+          "which",
+          "where"
+        ]
+      },
+      {
+        "sentence": "It was yesterday ___ I met her.",
+        "answer": "that",
+        "choices": [
+          "that",
+          "when",
+          "where",
+          "who"
+        ]
+      }
+    ]
   },
   {
-    "title": "도치",
-    "rule": "부정어 도치: Never/Rarely/Seldom + 조동사 + 주어",
+    "title": "도치 (부정어)",
+    "rule": "Never/Rarely/Seldom + 조동사 + 주어.",
     "example": "Never have I seen such a view.",
-    "exampleKo": "그런 경치는 본 적이 없다."
+    "exampleKo": "그런 경치는 본 적이 없다.",
+    "tip": "강조·문어체 느낌이 있습니다.",
+    "quizzes": [
+      {
+        "sentence": "Never ___ I seen such a view.",
+        "answer": "have",
+        "choices": [
+          "have",
+          "has",
+          "had",
+          "was"
+        ]
+      },
+      {
+        "sentence": "Rarely does he ___ on time.",
+        "answer": "arrive",
+        "choices": [
+          "arrive",
+          "arrives",
+          "arrived",
+          "arriving"
+        ]
+      },
+      {
+        "sentence": "Not only did she win, ___ she broke a record.",
+        "answer": "but",
+        "choices": [
+          "but",
+          "and",
+          "so",
+          "also"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "간접화법",
+    "rule": "말 전달 시 시제·시간·장소 표현이 뒤로.",
+    "example": "He said (that) he was tired.",
+    "exampleKo": "그는 피곤하다고 말했다.",
+    "tip": "said 뒤 과거는 '당시' 기준입니다.",
+    "quizzes": [
+      {
+        "sentence": "He said he ___ tired.",
+        "answer": "was",
+        "choices": [
+          "was",
+          "is",
+          "are",
+          "be"
+        ]
+      },
+      {
+        "sentence": "She told me she ___ come.",
+        "answer": "would",
+        "choices": [
+          "would",
+          "will",
+          "can",
+          "may"
+        ]
+      },
+      {
+        "sentence": "They asked if I ___ help.",
+        "answer": "could",
+        "choices": [
+          "could",
+          "can",
+          "will",
+          "may"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "사역동사 make/let/have",
+    "rule": "make O V / let O V / have O V.",
+    "example": "My mom made me clean my room.",
+    "exampleKo": "엄마가 방 청소를 시키셨다.",
+    "tip": "make는 '~하게 만들다', let은 '허락'.",
+    "quizzes": [
+      {
+        "sentence": "My mom made me ___ my room.",
+        "answer": "clean",
+        "choices": [
+          "clean",
+          "cleaning",
+          "to clean",
+          "cleaned"
+        ]
+      },
+      {
+        "sentence": "Let me ___ you.",
+        "answer": "help",
+        "choices": [
+          "help",
+          "helping",
+          "to help",
+          "helped"
+        ]
+      },
+      {
+        "sentence": "I had him ___ the report.",
+        "answer": "check",
+        "choices": [
+          "check",
+          "checking",
+          "to check",
+          "checked"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "목적격 보어",
+    "rule": "find/consider/think O + 형용사/명사.",
+    "example": "I find English interesting.",
+    "exampleKo": "나는 영어가 흥미롭다고 생각한다.",
+    "tip": "O + OC 구조입니다.",
+    "quizzes": [
+      {
+        "sentence": "I find English ___.",
+        "answer": "interesting",
+        "choices": [
+          "interesting",
+          "interest",
+          "interested",
+          "interestingly"
+        ]
+      },
+      {
+        "sentence": "We consider him ___.",
+        "answer": "reliable",
+        "choices": [
+          "reliable",
+          "rely",
+          "reliably",
+          "reliance"
+        ]
+      },
+      {
+        "sentence": "They elected her ___.",
+        "answer": "president",
+        "choices": [
+          "president",
+          "presidential",
+          "preside",
+          "presiding"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "관용 표현 wish",
+    "rule": "I wish + 과거: 현재 소망. I wish + had p.p.: 과거 후회.",
+    "example": "I wish I could speak better English.",
+    "exampleKo": "영어를 더 잘 말할 수 있으면 좋겠다.",
+    "tip": "wish 뒤는 가정법 어순입니다.",
+    "quizzes": [
+      {
+        "sentence": "I wish I ___ speak better English.",
+        "answer": "could",
+        "choices": [
+          "could",
+          "can",
+          "will",
+          "may"
+        ]
+      },
+      {
+        "sentence": "I wish it ___ not rain tomorrow.",
+        "answer": "would",
+        "choices": [
+          "would",
+          "will",
+          "can",
+          "may"
+        ]
+      },
+      {
+        "sentence": "She wishes she ___ studied harder.",
+        "answer": "had",
+        "choices": [
+          "had",
+          "has",
+          "have",
+          "studies"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "as if / as though",
+    "rule": "as if + 절: 마치 ~인 것처럼.",
+    "example": "He talks as if he knew everything.",
+    "exampleKo": "그는 모든 것을 아는 것처럼 말한다.",
+    "tip": "사실과 다를 수 있는 비유입니다.",
+    "quizzes": [
+      {
+        "sentence": "He talks as if he ___ everything.",
+        "answer": "knew",
+        "choices": [
+          "knew",
+          "knows",
+          "know",
+          "known"
+        ]
+      },
+      {
+        "sentence": "She looked as though she ___ crying.",
+        "answer": "had been",
+        "choices": [
+          "had been",
+          "has",
+          "is",
+          "was"
+        ]
+      },
+      {
+        "sentence": "It sounds as if it ___ raining.",
+        "answer": "were",
+        "choices": [
+          "were",
+          "was",
+          "is",
+          "are"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "관계사 what",
+    "rule": "what = the thing(s) which. 명사절.",
+    "example": "What he said was surprising.",
+    "exampleKo": "그가 한 말은 놀라웠다.",
+    "tip": "what절 전체가 주어·목적어가 됩니다.",
+    "quizzes": [
+      {
+        "sentence": "___ he said was surprising.",
+        "answer": "What",
+        "choices": [
+          "What",
+          "That",
+          "Which",
+          "Who"
+        ]
+      },
+      {
+        "sentence": "I don't understand ___ you mean.",
+        "answer": "what",
+        "choices": [
+          "what",
+          "that",
+          "which",
+          "who"
+        ]
+      },
+      {
+        "sentence": "Tell me ___ you need.",
+        "answer": "what",
+        "choices": [
+          "what",
+          "that",
+          "which",
+          "who"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "복합관계사",
+    "rule": "whoever, whatever, whichever: ~하는 누구/무엇이든.",
+    "example": "Take whatever you want.",
+    "exampleKo": "원하는 것을 가져가세요.",
+    "tip": "양보·포괄의 의미가 있습니다.",
+    "quizzes": [
+      {
+        "sentence": "Take ___ you want.",
+        "answer": "whatever",
+        "choices": [
+          "whatever",
+          "however",
+          "whoever",
+          "whichever"
+        ]
+      },
+      {
+        "sentence": "___ calls, tell them I'm busy.",
+        "answer": "Whoever",
+        "choices": [
+          "Whoever",
+          "Whatever",
+          "However",
+          "Whichever"
+        ]
+      },
+      {
+        "sentence": "Choose ___ color you like.",
+        "answer": "whichever",
+        "choices": [
+          "whichever",
+          "whatever",
+          "whoever",
+          "however"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "동명사 vs to부정사",
+    "rule": "remember/forget/stop/regret + -ing vs to V 의미 차이.",
+    "example": "I remember meeting her before.",
+    "exampleKo": "전에 그녀를 만난 것을 기억한다.",
+    "tip": "의미가 달라지는 동사를 정리하세요.",
+    "quizzes": [
+      {
+        "sentence": "I remember ___ her before.",
+        "answer": "meeting",
+        "choices": [
+          "meeting",
+          "meet",
+          "to meet",
+          "met"
+        ]
+      },
+      {
+        "sentence": "He stopped ___ smoke.",
+        "answer": "smoking",
+        "choices": [
+          "smoking",
+          "smoke",
+          "to smoke",
+          "smoked"
+        ]
+      },
+      {
+        "sentence": "She forgot ___ the door.",
+        "answer": "to lock",
+        "choices": [
+          "to lock",
+          "locking",
+          "lock",
+          "locked"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "가정법 혼합",
+    "rule": "If I had known, I would help you now. 과거 가정 + 현재 결과.",
+    "example": "If I had studied harder, I would be relaxed now.",
+    "exampleKo": "더 공부했더라면 지금은 여유로울 텐데.",
+    "tip": "과거 가정 + 현재 결과를 연결합니다.",
+    "quizzes": [
+      {
+        "sentence": "If I ___ known, I would help you now.",
+        "answer": "had",
+        "choices": [
+          "had",
+          "have",
+          "has",
+          "know"
+        ]
+      },
+      {
+        "sentence": "If she were here, she ___ have agreed.",
+        "answer": "would",
+        "choices": [
+          "would",
+          "will",
+          "can",
+          "may"
+        ]
+      },
+      {
+        "sentence": "If they ___ studied, they would be relaxed now.",
+        "answer": "had",
+        "choices": [
+          "had",
+          "have",
+          "has",
+          "study"
+        ]
+      }
+    ]
   }
 ]

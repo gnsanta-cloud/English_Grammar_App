@@ -1,62 +1,860 @@
 [
   {
     "title": "Would you mind",
-    "rule": "Would you mind + -ing? 정중한 요청",
+    "rule": "Would you mind + -ing? 정중한 요청.",
     "example": "Would you mind opening the window?",
-    "exampleKo": "창문 좀 열어 주시겠어요?"
+    "exampleKo": "창문 좀 열어 주시겠어요?",
+    "tip": "거절 시 Not at all / Of course not.",
+    "quizzes": [
+      {
+        "sentence": "Would you mind ___ the window?",
+        "answer": "opening",
+        "choices": [
+          "opening",
+          "open",
+          "to open",
+          "opened"
+        ]
+      },
+      {
+        "sentence": "Would you mind if I ___ here?",
+        "answer": "sat",
+        "choices": [
+          "sat",
+          "sit",
+          "sitting",
+          "sits"
+        ]
+      },
+      {
+        "sentence": "Do you mind ___ the music down?",
+        "answer": "turning",
+        "choices": [
+          "turning",
+          "turn",
+          "to turn",
+          "turned"
+        ]
+      }
+    ]
   },
   {
     "title": "Could you",
-    "rule": "Could you + 동사원형? 공손한 부탁",
+    "rule": "Could you + V? 공손한 부탁.",
     "example": "Could you speak more slowly?",
-    "exampleKo": "좀 더 천천히 말씀해 주시겠어요?"
+    "exampleKo": "좀 더 천천히 말씀해 주시겠어요?",
+    "tip": "Could I ~? 도 허락을 구합니다.",
+    "quizzes": [
+      {
+        "sentence": "___ you help me?",
+        "answer": "Could",
+        "choices": [
+          "Could",
+          "Can",
+          "Will",
+          "Do"
+        ]
+      },
+      {
+        "sentence": "Could you speak more ___?",
+        "answer": "slowly",
+        "choices": [
+          "slowly",
+          "slow",
+          "slower",
+          "slowest"
+        ]
+      },
+      {
+        "sentence": "___ I use your phone?",
+        "answer": "Could",
+        "choices": [
+          "Could",
+          "Can",
+          "Will",
+          "Do"
+        ]
+      }
+    ]
   },
   {
-    "title": "I'm used to",
-    "rule": "be used to + -ing. ~에 익숙하다",
-    "example": "I'm used to getting up early.",
-    "exampleKo": "일찍 일어나는 것에 익숙합니다."
+    "title": "I'd like to",
+    "rule": "I'd like to + V. 주문·요청.",
+    "example": "I'd like to make a reservation.",
+    "exampleKo": "예약하고 싶습니다.",
+    "tip": "I'd = I would / I had 맥락에 주의.",
+    "quizzes": [
+      {
+        "sentence": "I'd like ___ order pasta.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "ed"
+        ]
+      },
+      {
+        "sentence": "I'd like a ___, please.",
+        "answer": "coffee",
+        "choices": [
+          "coffee",
+          "coffees",
+          "coffeed",
+          "coffing"
+        ]
+      },
+      {
+        "sentence": "We'd like ___ check in.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "on"
+        ]
+      }
+    ]
   },
   {
     "title": "Have you ever",
-    "rule": "Have you ever + p.p.? 경험 질문",
+    "rule": "Have you ever + p.p.? 경험 질문.",
     "example": "Have you ever tried kimchi?",
-    "exampleKo": "김치 먹어 본 적 있어요?"
+    "exampleKo": "김치 먹어 본 적 있어요?",
+    "tip": "Yes, I have / No, I haven't.",
+    "quizzes": [
+      {
+        "sentence": "Have you ever ___ abroad?",
+        "answer": "been",
+        "choices": [
+          "been",
+          "be",
+          "being",
+          "was"
+        ]
+      },
+      {
+        "sentence": "___ you ever seen this show?",
+        "answer": "Have",
+        "choices": [
+          "Have",
+          "Has",
+          "Did",
+          "Do"
+        ]
+      },
+      {
+        "sentence": "She has never ___ sushi.",
+        "answer": "tried",
+        "choices": [
+          "tried",
+          "try",
+          "trying",
+          "tries"
+        ]
+      }
+    ]
   },
   {
     "title": "I'd rather",
-    "rule": "would rather + 동사원형. 차라리 ~하다",
+    "rule": "would rather + V. 차라리 ~하다.",
     "example": "I'd rather walk than drive.",
-    "exampleKo": "운전하기보다 걷는 게 낫습니다."
+    "exampleKo": "운전하기보다 걷는 게 낫습니다.",
+    "tip": "would rather A than B.",
+    "quizzes": [
+      {
+        "sentence": "I'd rather ___ than drive.",
+        "answer": "walk",
+        "choices": [
+          "walk",
+          "walking",
+          "to walk",
+          "walked"
+        ]
+      },
+      {
+        "sentence": "Would you rather ___ or stay?",
+        "answer": "go",
+        "choices": [
+          "go",
+          "going",
+          "to go",
+          "went"
+        ]
+      },
+      {
+        "sentence": "She'd rather not ___ about it.",
+        "answer": "talk",
+        "choices": [
+          "talk",
+          "talking",
+          "to talk",
+          "talked"
+        ]
+      }
+    ]
   },
   {
     "title": "It's time to",
-    "rule": "It's time to + V / for + 명사. ~할 시간이다",
+    "rule": "It's time to + V / for + 명사.",
     "example": "It's time to leave.",
-    "exampleKo": "떠날 시간입니다."
+    "exampleKo": "떠날 시간입니다.",
+    "tip": "It's high time은 가정법 과거도 가능.",
+    "quizzes": [
+      {
+        "sentence": "It's time ___ leave.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "on"
+        ]
+      },
+      {
+        "sentence": "It's time for ___.",
+        "answer": "lunch",
+        "choices": [
+          "lunch",
+          "lunches",
+          "lunched",
+          "lunching"
+        ]
+      },
+      {
+        "sentence": "It's time we ___.",
+        "answer": "went",
+        "choices": [
+          "went",
+          "go",
+          "going",
+          "goes"
+        ]
+      }
+    ]
   },
   {
     "title": "Suggest that",
-    "rule": "suggest that + 주어 + (should) + V. 제안",
+    "rule": "suggest that + (should) + V.",
     "example": "She suggested that we take a taxi.",
-    "exampleKo": "그녀는 택시를 타자고 제안했다."
+    "exampleKo": "그녀는 택시를 타자고 제안했다.",
+    "tip": "suggest + -ing / suggest + 명사도 가능.",
+    "quizzes": [
+      {
+        "sentence": "She suggested that we ___ a taxi.",
+        "answer": "take",
+        "choices": [
+          "take",
+          "takes",
+          "took",
+          "taking"
+        ]
+      },
+      {
+        "sentence": "He suggested ___ early.",
+        "answer": "leaving",
+        "choices": [
+          "leaving",
+          "leave",
+          "to leave",
+          "left"
+        ]
+      },
+      {
+        "sentence": "I suggest a ___.",
+        "answer": "break",
+        "choices": [
+          "break",
+          "breaking",
+          "broke",
+          "breaks"
+        ]
+      }
+    ]
   },
   {
     "title": "Apologize for",
-    "rule": "apologize for + -ing. ~에 대해 사과",
+    "rule": "apologize for + -ing. ~에 대해 사과.",
     "example": "I apologize for being late.",
-    "exampleKo": "늦어서 죄송합니다."
+    "exampleKo": "늦어서 죄송합니다.",
+    "tip": "I'm sorry for ~ 도 같은 의미.",
+    "quizzes": [
+      {
+        "sentence": "I apologize for ___ late.",
+        "answer": "being",
+        "choices": [
+          "being",
+          "be",
+          "to be",
+          "was"
+        ]
+      },
+      {
+        "sentence": "She apologized for ___ the mistake.",
+        "answer": "making",
+        "choices": [
+          "making",
+          "make",
+          "to make",
+          "made"
+        ]
+      },
+      {
+        "sentence": "We apologize for the ___.",
+        "answer": "delay",
+        "choices": [
+          "delay",
+          "delays",
+          "delayed",
+          "delaying"
+        ]
+      }
+    ]
   },
   {
-    "title": "Look + 형용사",
-    "rule": "look/sound/feel + 형용사. 감각동사",
+    "title": "Look / Sound / Feel",
+    "rule": "감각동사 + 형용사.",
     "example": "You look tired today.",
-    "exampleKo": "오늘 피곤해 보여요."
+    "exampleKo": "오늘 피곤해 보여요.",
+    "tip": "look은 외모·인상입니다.",
+    "quizzes": [
+      {
+        "sentence": "You look ___ today.",
+        "answer": "tired",
+        "choices": [
+          "tired",
+          "tire",
+          "tiring",
+          "tiredly"
+        ]
+      },
+      {
+        "sentence": "That sounds ___.",
+        "answer": "great",
+        "choices": [
+          "great",
+          "greatly",
+          "greatness",
+          "greater"
+        ]
+      },
+      {
+        "sentence": "I feel ___.",
+        "answer": "better",
+        "choices": [
+          "better",
+          "well",
+          "good",
+          "best"
+        ]
+      }
+    ]
   },
   {
-    "title": "Make + O + V",
-    "rule": "make + 목적어 + 동사원형. ~하게 만들다",
+    "title": "Make / Let / Have",
+    "rule": "make O V, let O V, have O V.",
     "example": "The news made me happy.",
-    "exampleKo": "그 소식이 나를 기쁘게 했다."
+    "exampleKo": "그 소식이 나를 기쁘게 했다.",
+    "tip": "have O p.p.는 '~하게 시키다(완료)'.",
+    "quizzes": [
+      {
+        "sentence": "The news made me ___.",
+        "answer": "happy",
+        "choices": [
+          "happy",
+          "happily",
+          "happiness",
+          "happier"
+        ]
+      },
+      {
+        "sentence": "Let me ___ you.",
+        "answer": "help",
+        "choices": [
+          "help",
+          "helping",
+          "to help",
+          "helped"
+        ]
+      },
+      {
+        "sentence": "I'll have him ___ you.",
+        "answer": "call",
+        "choices": [
+          "call",
+          "calling",
+          "to call",
+          "called"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "In order to",
+    "rule": "in order to + V: ~하기 위해.",
+    "example": "I study in order to pass the test.",
+    "exampleKo": "시험에 합격하기 위해 공부합니다.",
+    "tip": "so as to는 격식체.",
+    "quizzes": [
+      {
+        "sentence": "I study in order ___ pass.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "on"
+        ]
+      },
+      {
+        "sentence": "She left early in order ___ catch the train.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "on"
+        ]
+      },
+      {
+        "sentence": "We save money in order ___ travel.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "on"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Despite / In spite of",
+    "rule": "despite / in spite of + 명사/-ing. ~에도 불구하고.",
+    "example": "Despite the rain, we went out.",
+    "exampleKo": "비에도 불구하고 나갔습니다.",
+    "tip": "뒤에 문장 전체는 despite the fact that.",
+    "quizzes": [
+      {
+        "sentence": "___ the rain, we went out.",
+        "answer": "Despite",
+        "choices": [
+          "Despite",
+          "Although",
+          "Because",
+          "Since"
+        ]
+      },
+      {
+        "sentence": "In spite of ___ tired, she continued.",
+        "answer": "being",
+        "choices": [
+          "being",
+          "be",
+          "to be",
+          "was"
+        ]
+      },
+      {
+        "sentence": "He succeeded despite ___ difficulties.",
+        "answer": "many",
+        "choices": [
+          "many",
+          "much",
+          "more",
+          "most"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "As soon as",
+    "rule": "as soon as + 절: ~하자마자.",
+    "example": "Call me as soon as you arrive.",
+    "exampleKo": "도착하자마자 전화해 주세요.",
+    "tip": "when과 비슷하지만 '즉시' 느낌.",
+    "quizzes": [
+      {
+        "sentence": "Call me as soon as you ___.",
+        "answer": "arrive",
+        "choices": [
+          "arrive",
+          "arrives",
+          "arrived",
+          "arriving"
+        ]
+      },
+      {
+        "sentence": "As soon as I ___, I will email you.",
+        "answer": "finish",
+        "choices": [
+          "finish",
+          "finishes",
+          "finished",
+          "finishing"
+        ]
+      },
+      {
+        "sentence": "She left as soon as the meeting ___.",
+        "answer": "ended",
+        "choices": [
+          "ended",
+          "end",
+          "ends",
+          "ending"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Unless",
+    "rule": "unless = if not. ~하지 않으면.",
+    "example": "Unless it rains, we will picnic.",
+    "exampleKo": "비가 오지 않으면 소풍 갈 거예요.",
+    "tip": "조건을 나타냅니다.",
+    "quizzes": [
+      {
+        "sentence": "___ it rains, we will picnic.",
+        "answer": "Unless",
+        "choices": [
+          "Unless",
+          "Until",
+          "Although",
+          "Because"
+        ]
+      },
+      {
+        "sentence": "You can't enter ___ you have a ticket.",
+        "answer": "unless",
+        "choices": [
+          "unless",
+          "until",
+          "because",
+          "since"
+        ]
+      },
+      {
+        "sentence": "Unless she ___, we will start without her.",
+        "answer": "comes",
+        "choices": [
+          "comes",
+          "come",
+          "came",
+          "coming"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Whether",
+    "rule": "whether ~ or not: ~인지 아닌지.",
+    "example": "I don't know whether he will come.",
+    "exampleKo": "그가 올지 모르겠다.",
+    "tip": "if와 달리 whether는 명확합니다.",
+    "quizzes": [
+      {
+        "sentence": "I don't know ___ he will come.",
+        "answer": "whether",
+        "choices": [
+          "whether",
+          "weather",
+          "if",
+          "that"
+        ]
+      },
+      {
+        "sentence": "Tell me ___ you need help.",
+        "answer": "if",
+        "choices": [
+          "if",
+          "whether",
+          "that",
+          "what"
+        ]
+      },
+      {
+        "sentence": "She asked whether I ___ busy.",
+        "answer": "was",
+        "choices": [
+          "was",
+          "were",
+          "am",
+          "is"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Used to",
+    "rule": "used to + V: 예전에 ~하곤 했다.",
+    "example": "I used to play the piano.",
+    "exampleKo": "예전에는 피아노를 쳤습니다.",
+    "tip": "be used to -ing와 구분하세요.",
+    "quizzes": [
+      {
+        "sentence": "I ___ to play the piano.",
+        "answer": "used",
+        "choices": [
+          "used",
+          "use",
+          "using",
+          "uses"
+        ]
+      },
+      {
+        "sentence": "She didn't use to ___ coffee.",
+        "answer": "drink",
+        "choices": [
+          "drink",
+          "drinks",
+          "drinking",
+          "drank"
+        ]
+      },
+      {
+        "sentence": "___ you use to live here?",
+        "answer": "Did",
+        "choices": [
+          "Did",
+          "Do",
+          "Are",
+          "Have"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "By the time",
+    "rule": "by the time + 절: ~할 때쯤에는.",
+    "example": "By the time you arrive, I will be ready.",
+    "exampleKo": "네가 도착할 때쯤이면 준비돼 있을 거야.",
+    "tip": "미래완료와 자주 연결됩니다.",
+    "quizzes": [
+      {
+        "sentence": "By the time you ___, I will be ready.",
+        "answer": "arrive",
+        "choices": [
+          "arrive",
+          "arrives",
+          "arrived",
+          "arriving"
+        ]
+      },
+      {
+        "sentence": "By the time she called, I ___ left.",
+        "answer": "had",
+        "choices": [
+          "had",
+          "have",
+          "has",
+          "was"
+        ]
+      },
+      {
+        "sentence": "By the time we finish, they ___ have eaten.",
+        "answer": "will",
+        "choices": [
+          "will",
+          "would",
+          "have",
+          "are"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Not only ... but also",
+    "rule": "not only A but also B.",
+    "example": "She is not only smart but also kind.",
+    "exampleKo": "그녀는 똑똑할 뿐 아니라 친절하다.",
+    "tip": "강조 구문입니다.",
+    "quizzes": [
+      {
+        "sentence": "She is not only smart ___ also kind.",
+        "answer": "but",
+        "choices": [
+          "but",
+          "and",
+          "or",
+          "so"
+        ]
+      },
+      {
+        "sentence": "Not only did he win, ___ he broke a record.",
+        "answer": "but",
+        "choices": [
+          "but",
+          "and",
+          "or",
+          "so"
+        ]
+      },
+      {
+        "sentence": "They not only sell books ___ also coffee.",
+        "answer": "but",
+        "choices": [
+          "but",
+          "and",
+          "or",
+          "so"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "It seems / appears",
+    "rule": "It seems that / seems to V: ~인 것 같다.",
+    "example": "It seems that he is busy.",
+    "exampleKo": "그가 바쁜 것 같습니다.",
+    "tip": "seem + 형용사도 가능합니다.",
+    "quizzes": [
+      {
+        "sentence": "It ___ that he is busy.",
+        "answer": "seems",
+        "choices": [
+          "seems",
+          "seem",
+          "seemed",
+          "seeming"
+        ]
+      },
+      {
+        "sentence": "She seems ___.",
+        "answer": "happy",
+        "choices": [
+          "happy",
+          "happily",
+          "happiness",
+          "happier"
+        ]
+      },
+      {
+        "sentence": "It appears we ___ late.",
+        "answer": "are",
+        "choices": [
+          "are",
+          "is",
+          "were",
+          "was"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Suppose / What if",
+    "rule": "가정·제안: suppose, what if.",
+    "example": "What if we leave early?",
+    "exampleKo": "일찍 떠나면 어때?",
+    "tip": "Suppose you won the lottery?",
+    "quizzes": [
+      {
+        "sentence": "What if we ___ early?",
+        "answer": "leave",
+        "choices": [
+          "leave",
+          "leaves",
+          "left",
+          "leaving"
+        ]
+      },
+      {
+        "sentence": "Suppose it ___ tomorrow?",
+        "answer": "rains",
+        "choices": [
+          "rains",
+          "rain",
+          "rained",
+          "raining"
+        ]
+      },
+      {
+        "sentence": "What if she ___ say no?",
+        "answer": "does",
+        "choices": [
+          "does",
+          "do",
+          "did",
+          "doing"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "No matter",
+    "rule": "no matter how/what/who: 아무리 ~해도.",
+    "example": "No matter how hard I try, I fail.",
+    "exampleKo": "아무리 노력해도 실패한다.",
+    "tip": "whatever = no matter what.",
+    "quizzes": [
+      {
+        "sentence": "No matter how hard I ___, I fail.",
+        "answer": "try",
+        "choices": [
+          "try",
+          "tries",
+          "tried",
+          "trying"
+        ]
+      },
+      {
+        "sentence": "No matter ___ you say, I won't go.",
+        "answer": "what",
+        "choices": [
+          "what",
+          "that",
+          "which",
+          "who"
+        ]
+      },
+      {
+        "sentence": "___ happens, stay calm.",
+        "answer": "Whatever",
+        "choices": [
+          "Whatever",
+          "However",
+          "Whoever",
+          "Whichever"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The more ... the more",
+    "rule": "the + 비교급 ..., the + 비교급 ...",
+    "example": "The more you practice, the better you get.",
+    "exampleKo": "연습할수록 더 나아집니다.",
+    "tip": "비례 관계를 나타냅니다.",
+    "quizzes": [
+      {
+        "sentence": "The more you ___, the better you get.",
+        "answer": "practice",
+        "choices": [
+          "practice",
+          "practices",
+          "practiced",
+          "practicing"
+        ]
+      },
+      {
+        "sentence": "The ___ it rains, the worse traffic is.",
+        "answer": "more",
+        "choices": [
+          "more",
+          "most",
+          "much",
+          "many"
+        ]
+      },
+      {
+        "sentence": "The harder you work, the ___ you succeed.",
+        "answer": "more likely",
+        "choices": [
+          "more likely",
+          "most likely",
+          "likely",
+          "likelier"
+        ]
+      }
+    ]
   }
 ]

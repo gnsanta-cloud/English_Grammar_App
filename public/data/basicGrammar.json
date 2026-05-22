@@ -1,62 +1,860 @@
 [
   {
     "title": "인칭대명사",
-    "rule": "I, you, he, she, it, we, they. 소유격 my/your/his/her",
+    "rule": "I, you, he, she, it, we, they. 소유: my, your, his, her.",
     "example": "They are my friends.",
-    "exampleKo": "그들은 내 친구들입니다."
+    "exampleKo": "그들은 내 친구들입니다.",
+    "tip": "주어 자리에 인칭대명사를 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "___ are my friends.",
+        "answer": "They",
+        "choices": [
+          "They",
+          "Them",
+          "Their",
+          "Theirs"
+        ]
+      },
+      {
+        "sentence": "This book is ___.",
+        "answer": "mine",
+        "choices": [
+          "mine",
+          "my",
+          "me",
+          "I"
+        ]
+      },
+      {
+        "sentence": "I gave ___ a gift.",
+        "answer": "her",
+        "choices": [
+          "her",
+          "she",
+          "hers",
+          "herself"
+        ]
+      }
+    ]
   },
   {
-    "title": "This/That",
-    "rule": "This/These: 가까운 것. That/Those: 먼 것",
+    "title": "This/That/These/Those",
+    "rule": "가까운 것 this/these, 먼 것 that/those.",
     "example": "That is my bag.",
-    "exampleKo": "저것은 내 가방입니다."
+    "exampleKo": "저것은 내 가방입니다.",
+    "tip": "these/those는 복수입니다.",
+    "quizzes": [
+      {
+        "sentence": "___ is my bag.",
+        "answer": "That",
+        "choices": [
+          "That",
+          "This",
+          "These",
+          "Those"
+        ]
+      },
+      {
+        "sentence": "___ students are new.",
+        "answer": "These",
+        "choices": [
+          "These",
+          "This",
+          "Those",
+          "That"
+        ]
+      },
+      {
+        "sentence": "___ shoes are too small.",
+        "answer": "Those",
+        "choices": [
+          "Those",
+          "These",
+          "That",
+          "This"
+        ]
+      }
+    ]
   },
   {
     "title": "형용사 위치",
-    "rule": "형용사는 명사 앞. very + 형용사",
+    "rule": "형용사는 명사 앞. a beautiful day.",
     "example": "It is a beautiful day.",
-    "exampleKo": "아름다운 날입니다."
+    "exampleKo": "아름다운 날입니다.",
+    "tip": "very + 형용사로 정도를 나타냅니다.",
+    "quizzes": [
+      {
+        "sentence": "It is a ___ day.",
+        "answer": "beautiful",
+        "choices": [
+          "beautiful",
+          "beauty",
+          "beautifully",
+          "beautify"
+        ]
+      },
+      {
+        "sentence": "She wears a ___ dress.",
+        "answer": "red",
+        "choices": [
+          "red",
+          "reds",
+          "redden",
+          "redly"
+        ]
+      },
+      {
+        "sentence": "He is a ___ man.",
+        "answer": "kind",
+        "choices": [
+          "kind",
+          "kindly",
+          "kindness",
+          "kinder"
+        ]
+      }
+    ]
   },
   {
-    "title": "부사 빈도",
-    "rule": "always, usually, often, sometimes, never. be동사 뒤·일반동사 앞",
-    "example": "I usually drink coffee in the morning.",
-    "exampleKo": "나는 보통 아침에 커피를 마신다."
+    "title": "부사 (방법)",
+    "rule": "동사·형용사·문장을 꾸밈. quickly, well.",
+    "example": "He speaks English well.",
+    "exampleKo": "그는 영어를 잘 말합니다.",
+    "tip": "well은 형용사 good의 부사형입니다.",
+    "quizzes": [
+      {
+        "sentence": "He speaks English ___.",
+        "answer": "well",
+        "choices": [
+          "well",
+          "good",
+          "better",
+          "best"
+        ]
+      },
+      {
+        "sentence": "She runs ___.",
+        "answer": "quickly",
+        "choices": [
+          "quickly",
+          "quick",
+          "quicker",
+          "quickest"
+        ]
+      },
+      {
+        "sentence": "They worked ___.",
+        "answer": "hard",
+        "choices": [
+          "hard",
+          "hardly",
+          "harder",
+          "hardest"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "There is/are",
+    "rule": "There is + 단수, There are + 복수.",
+    "example": "There is a cat on the sofa.",
+    "exampleKo": "소파 위에 고양이가 있다.",
+    "tip": "진짜 주어는 there 뒤 명사입니다.",
+    "quizzes": [
+      {
+        "sentence": "There ___ a cat on the sofa.",
+        "answer": "is",
+        "choices": [
+          "is",
+          "are",
+          "am",
+          "be"
+        ]
+      },
+      {
+        "sentence": "There ___ two windows.",
+        "answer": "are",
+        "choices": [
+          "are",
+          "is",
+          "am",
+          "was"
+        ]
+      },
+      {
+        "sentence": "___ there any sugar?",
+        "answer": "Is",
+        "choices": [
+          "Is",
+          "Are",
+          "Do",
+          "Does"
+        ]
+      }
+    ]
   },
   {
     "title": "Some/Any",
-    "rule": "some: 긍정·제안. any: 부정·의문",
+    "rule": "some: 긍정·제안. any: 부정·의문.",
     "example": "Do you have any questions?",
-    "exampleKo": "질문 있으세요?"
+    "exampleKo": "질문 있으세요?",
+    "tip": "Would you like some coffee?",
+    "quizzes": [
+      {
+        "sentence": "I don't have ___ money.",
+        "answer": "any",
+        "choices": [
+          "any",
+          "some",
+          "many",
+          "much"
+        ]
+      },
+      {
+        "sentence": "Would you like ___ tea?",
+        "answer": "some",
+        "choices": [
+          "some",
+          "any",
+          "many",
+          "few"
+        ]
+      },
+      {
+        "sentence": "Are there ___ problems?",
+        "answer": "any",
+        "choices": [
+          "any",
+          "some",
+          "much",
+          "little"
+        ]
+      }
+    ]
   },
   {
-    "title": "How many/much",
-    "rule": "How many + 복수명사, How much + 불가산",
+    "title": "How many / How much",
+    "rule": "many + 복수, much + 불가산.",
     "example": "How much does it cost?",
-    "exampleKo": "얼마예요?"
+    "exampleKo": "얼마예요?",
+    "tip": "How old are you?는 나이를 묻습니다.",
+    "quizzes": [
+      {
+        "sentence": "How ___ books do you have?",
+        "answer": "many",
+        "choices": [
+          "many",
+          "much",
+          "often",
+          "long"
+        ]
+      },
+      {
+        "sentence": "How ___ water do you need?",
+        "answer": "much",
+        "choices": [
+          "much",
+          "many",
+          "often",
+          "far"
+        ]
+      },
+      {
+        "sentence": "How ___ is your brother?",
+        "answer": "old",
+        "choices": [
+          "old",
+          "many",
+          "much",
+          "long"
+        ]
+      }
+    ]
   },
   {
-    "title": "Let us",
-    "rule": "Let's + 동사원형. 제안·권유",
+    "title": "Let's / Let me",
+    "rule": "Let's + V: 제안. Let me + V: 허락 요청.",
     "example": "Let's take a break.",
-    "exampleKo": "잠깐 쉽시다."
+    "exampleKo": "잠깐 쉽시다.",
+    "tip": "Let's = Let us입니다.",
+    "quizzes": [
+      {
+        "sentence": "___ take a break.",
+        "answer": "Let's",
+        "choices": [
+          "Let's",
+          "Let",
+          "Lets",
+          "We're"
+        ]
+      },
+      {
+        "sentence": "Let me ___ you.",
+        "answer": "help",
+        "choices": [
+          "help",
+          "helps",
+          "helping",
+          "to help"
+        ]
+      },
+      {
+        "sentence": "Let's not ___ late.",
+        "answer": "be",
+        "choices": [
+          "be",
+          "are",
+          "is",
+          "being"
+        ]
+      }
+    ]
   },
   {
     "title": "Would like",
-    "rule": "would like to + 동사. 정중한 희망",
+    "rule": "would like to + V. 정중한 희망.",
     "example": "I would like to order pasta.",
-    "exampleKo": "파스타를 주문하고 싶습니다."
+    "exampleKo": "파스타를 주문하고 싶습니다.",
+    "tip": "I'd like = I would like.",
+    "quizzes": [
+      {
+        "sentence": "I would like ___ order pasta.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "ed"
+        ]
+      },
+      {
+        "sentence": "Would you like ___ coffee?",
+        "answer": "some",
+        "choices": [
+          "some",
+          "any",
+          "many",
+          "much"
+        ]
+      },
+      {
+        "sentence": "She'd like ___ visit Korea.",
+        "answer": "to",
+        "choices": [
+          "to",
+          "for",
+          "ing",
+          "on"
+        ]
+      }
+    ]
   },
   {
     "title": "Look forward to",
-    "rule": "look forward to + -ing. ~을 고대하다",
+    "rule": "look forward to + -ing. ~을 고대하다.",
     "example": "I look forward to meeting you.",
-    "exampleKo": "당신을 만나기를 고대합니다."
+    "exampleKo": "당신을 만나기를 고대합니다.",
+    "tip": "to 뒤에 -ing가 옵니다.",
+    "quizzes": [
+      {
+        "sentence": "I look forward to ___ you.",
+        "answer": "meeting",
+        "choices": [
+          "meeting",
+          "meet",
+          "to meet",
+          "met"
+        ]
+      },
+      {
+        "sentence": "We are looking forward to ___ summer.",
+        "answer": "having",
+        "choices": [
+          "having",
+          "have",
+          "to have",
+          "had"
+        ]
+      },
+      {
+        "sentence": "She looks forward to ___ the news.",
+        "answer": "hearing",
+        "choices": [
+          "hearing",
+          "hear",
+          "to hear",
+          "heard"
+        ]
+      }
+    ]
   },
   {
     "title": "Give up",
-    "rule": "give up + -ing/명사. 포기하다",
+    "rule": "give up + -ing. 포기하다.",
     "example": "Don't give up studying.",
-    "exampleKo": "공부를 포기하지 마세요."
+    "exampleKo": "공부를 포기하지 마세요.",
+    "tip": "give up은 구동사입니다.",
+    "quizzes": [
+      {
+        "sentence": "Don't give up ___.",
+        "answer": "studying",
+        "choices": [
+          "studying",
+          "study",
+          "to study",
+          "studied"
+        ]
+      },
+      {
+        "sentence": "He gave up ___ smoking.",
+        "answer": "trying to quit",
+        "choices": [
+          "trying to quit",
+          "try",
+          "to try",
+          "tried"
+        ]
+      },
+      {
+        "sentence": "Never give up ___ your dream.",
+        "answer": "chasing",
+        "choices": [
+          "chasing",
+          "chase",
+          "to chase",
+          "chased"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Have to / Don't have to",
+    "rule": "have to: ~해야 한다. don't have to: ~할 필요 없다.",
+    "example": "You have to wear a seatbelt.",
+    "exampleKo": "안전벨트를 매야 합니다.",
+    "tip": "must와 비슷하지만 외부 규칙 느낌입니다.",
+    "quizzes": [
+      {
+        "sentence": "You ___ wear a seatbelt.",
+        "answer": "have to",
+        "choices": [
+          "have to",
+          "has to",
+          "must to",
+          "had"
+        ]
+      },
+      {
+        "sentence": "I ___ finish this today.",
+        "answer": "have to",
+        "choices": [
+          "have to",
+          "has to",
+          "having",
+          "had"
+        ]
+      },
+      {
+        "sentence": "You ___ pay if it's free.",
+        "answer": "don't have to",
+        "choices": [
+          "don't have to",
+          "doesn't have to",
+          "must not",
+          "haven't"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Be used to",
+    "rule": "be used to + -ing. ~에 익숙하다.",
+    "example": "I'm used to getting up early.",
+    "exampleKo": "일찍 일어나는 것에 익숙합니다.",
+    "tip": "used to V는 '예전에 ~하곤 했다'와 다릅니다.",
+    "quizzes": [
+      {
+        "sentence": "I'm used to ___ up early.",
+        "answer": "getting",
+        "choices": [
+          "getting",
+          "get",
+          "to get",
+          "got"
+        ]
+      },
+      {
+        "sentence": "She isn't used to ___ spicy food.",
+        "answer": "eating",
+        "choices": [
+          "eating",
+          "eat",
+          "to eat",
+          "ate"
+        ]
+      },
+      {
+        "sentence": "Are you used to ___ alone?",
+        "answer": "living",
+        "choices": [
+          "living",
+          "live",
+          "to live",
+          "lived"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Question tags",
+    "rule": "부가의문: 앞 문장과 반대, 주어 대명사.",
+    "example": "You are tired, aren't you?",
+    "exampleKo": "피곤하지, 그렇지?",
+    "tip": "긍정문 뒤에는 부정 tag입니다.",
+    "quizzes": [
+      {
+        "sentence": "You are tired, ___ you?",
+        "answer": "aren't",
+        "choices": [
+          "aren't",
+          "isn't",
+          "don't",
+          "won't"
+        ]
+      },
+      {
+        "sentence": "She can swim, ___ she?",
+        "answer": "can't",
+        "choices": [
+          "can't",
+          "doesn't",
+          "isn't",
+          "won't"
+        ]
+      },
+      {
+        "sentence": "They left, ___ they?",
+        "answer": "didn't",
+        "choices": [
+          "didn't",
+          "don't",
+          "weren't",
+          "haven't"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Both / Either / Neither",
+    "rule": "both 둘 다, either 둘 중 하나, neither 둘 다 아님.",
+    "example": "Neither answer is correct.",
+    "exampleKo": "두 답 모두 정답이 아니다.",
+    "tip": "neither는 단수 동사를 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "___ of my parents are teachers.",
+        "answer": "Both",
+        "choices": [
+          "Both",
+          "Either",
+          "Neither",
+          "All"
+        ]
+      },
+      {
+        "sentence": "You can take ___ road.",
+        "answer": "either",
+        "choices": [
+          "either",
+          "both",
+          "neither",
+          "all"
+        ]
+      },
+      {
+        "sentence": "___ student passed the test.",
+        "answer": "Neither",
+        "choices": [
+          "Neither",
+          "Both",
+          "Either",
+          "All"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Each / Every",
+    "rule": "each: 개별, every: 전체 하나씩.",
+    "example": "Every student has a book.",
+    "exampleKo": "모든 학생이 책을 가지고 있다.",
+    "tip": "every + 단수 동사입니다.",
+    "quizzes": [
+      {
+        "sentence": "___ student has a book.",
+        "answer": "Every",
+        "choices": [
+          "Every",
+          "Each",
+          "All",
+          "Both"
+        ]
+      },
+      {
+        "sentence": "___ of the bags is heavy.",
+        "answer": "Each",
+        "choices": [
+          "Each",
+          "Every",
+          "All",
+          "Both"
+        ]
+      },
+      {
+        "sentence": "I go to the gym ___ week.",
+        "answer": "every",
+        "choices": [
+          "every",
+          "each",
+          "all",
+          "both"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Much / Many / A lot of",
+    "rule": "many + 복수, much + 불가산, a lot of 둘 다.",
+    "example": "I have a lot of homework.",
+    "exampleKo": "숙제가 많이 있습니다.",
+    "tip": "a lot of는 구어에서 자주 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "I don't have ___ time.",
+        "answer": "much",
+        "choices": [
+          "much",
+          "many",
+          "few",
+          "several"
+        ]
+      },
+      {
+        "sentence": "There are ___ people.",
+        "answer": "many",
+        "choices": [
+          "many",
+          "much",
+          "little",
+          "few"
+        ]
+      },
+      {
+        "sentence": "She has ___ friends.",
+        "answer": "a lot of",
+        "choices": [
+          "a lot of",
+          "many",
+          "much",
+          "few"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "A few / A little",
+    "rule": "a few + 복수(긍정), a little + 불가산(긍정).",
+    "example": "I have a few questions.",
+    "exampleKo": "질문이 몇 가지 있습니다.",
+    "tip": "few/little만 쓰면 부정적입니다.",
+    "quizzes": [
+      {
+        "sentence": "I have ___ questions.",
+        "answer": "a few",
+        "choices": [
+          "a few",
+          "few",
+          "a little",
+          "little"
+        ]
+      },
+      {
+        "sentence": "There is ___ milk left.",
+        "answer": "a little",
+        "choices": [
+          "a little",
+          "little",
+          "a few",
+          "few"
+        ]
+      },
+      {
+        "sentence": "___ people came.",
+        "answer": "Few",
+        "choices": [
+          "Few",
+          "A few",
+          "Little",
+          "A little"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Already / Yet / Still",
+    "rule": "already: 이미, yet: 아직(의문·부정), still: 여전히.",
+    "example": "Have you finished yet?",
+    "exampleKo": "아직 끝냈니?",
+    "tip": "still은 동사 앞에 옵니다.",
+    "quizzes": [
+      {
+        "sentence": "Have you finished ___?",
+        "answer": "yet",
+        "choices": [
+          "yet",
+          "already",
+          "still",
+          "just"
+        ]
+      },
+      {
+        "sentence": "I have ___ eaten.",
+        "answer": "already",
+        "choices": [
+          "already",
+          "yet",
+          "still",
+          "ever"
+        ]
+      },
+      {
+        "sentence": "She is ___ working.",
+        "answer": "still",
+        "choices": [
+          "still",
+          "yet",
+          "already",
+          "ever"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Too / Also / As well",
+    "rule": "too·also·as well: '~도' 추가.",
+    "example": "I like coffee, and I like tea too.",
+    "exampleKo": "커피도 좋아하고 차도 좋아합니다.",
+    "tip": "too는 주로 문장 끝에 씁니다.",
+    "quizzes": [
+      {
+        "sentence": "I like coffee, and I like tea ___.",
+        "answer": "too",
+        "choices": [
+          "too",
+          "to",
+          "two",
+          "also"
+        ]
+      },
+      {
+        "sentence": "She speaks French. She ___ speaks English.",
+        "answer": "also",
+        "choices": [
+          "also",
+          "too",
+          "either",
+          "as"
+        ]
+      },
+      {
+        "sentence": "He is coming ___ .",
+        "answer": "as well",
+        "choices": [
+          "as well",
+          "too",
+          "also",
+          "either"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Enough",
+    "rule": "형용사/부사 + enough. enough + 명사.",
+    "example": "We don't have enough time.",
+    "exampleKo": "시간이 충분하지 않습니다.",
+    "tip": "enough money = 충분한 돈.",
+    "quizzes": [
+      {
+        "sentence": "We don't have ___ time.",
+        "answer": "enough",
+        "choices": [
+          "enough",
+          "many",
+          "much",
+          "few"
+        ]
+      },
+      {
+        "sentence": "She is old ___ to drive.",
+        "answer": "enough",
+        "choices": [
+          "enough",
+          "too",
+          "so",
+          "very"
+        ]
+      },
+      {
+        "sentence": "There isn't ___ sugar.",
+        "answer": "enough",
+        "choices": [
+          "enough",
+          "many",
+          "much",
+          "few"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Comparative with as",
+    "rule": "as + 형용사 + as: ~만큼 …하다.",
+    "example": "He is as tall as his brother.",
+    "exampleKo": "그는 형만큼 키가 크다.",
+    "tip": "not as ~ as = less than.",
+    "quizzes": [
+      {
+        "sentence": "He is as tall ___ his brother.",
+        "answer": "as",
+        "choices": [
+          "as",
+          "than",
+          "from",
+          "to"
+        ]
+      },
+      {
+        "sentence": "This is not as easy ___ I thought.",
+        "answer": "as",
+        "choices": [
+          "as",
+          "than",
+          "from",
+          "like"
+        ]
+      },
+      {
+        "sentence": "She runs as fast ___ him.",
+        "answer": "as",
+        "choices": [
+          "as",
+          "than",
+          "from",
+          "to"
+        ]
+      }
+    ]
   }
 ]

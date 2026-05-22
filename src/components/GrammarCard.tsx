@@ -187,6 +187,7 @@ export function GrammarCard({
             <div className="flip-face flip-back">
               <div className="flip-back-content">
                 <p className="back-label">규칙</p>
+                {lesson.tip && <p className="grammar-tip-text">{lesson.tip}</p>}
                 <p className="meaning-text grammar-rule-text">{lesson.rule}</p>
                 <div className="example-block">
                   <p className="back-label">예문</p>

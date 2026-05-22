@@ -1,5 +1,9 @@
 import type { GrammarLesson } from '../types';
 
+export function getDayQuizCount(allLessons: GrammarLesson[], day: number): number {
+  return getLessonsForDay(allLessons, day).reduce((n, l) => n + l.quizzes.length, 0);
+}
+
 /** 문법은 하루 1개 주제(레슨) */
 export const LESSONS_PER_DAY = 1;
 

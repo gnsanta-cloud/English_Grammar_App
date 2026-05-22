@@ -41,7 +41,7 @@ export function HomeTab({
       <div className="home-tab-top">
         <div className="home-hero">
           <h2>학습 홈</h2>
-          <p>일차별 문법 학습 · 퀴즈(객관식/주관식)</p>
+          <p>일차별 문법 학습 · 괄호 빈칸 퀴즈</p>
         </div>
 
         <div className="home-current">

@@ -1,16 +1,18 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import type { GrammarLesson } from '../types';
+import type { GrammarQuizQuestion } from '../types';
 import { useBackHandler } from '../hooks/useAndroidBackButton';
-import { getDayStatus, getDayLessonCount, getLessonsForDay } from '../utils/dailyPlan';
-import { isEnglishQuizAnswerCorrect, isQuizAnswerCorrect } from '../utils/quizAnswer';
+import { getDayStatus, getDayLessonCount, getDayQuizCount } from '../utils/dailyPlan';
+import {
+  buildShuffledQuestionPool,
+  getQuizQuestionsForDay,
+  shuffleChoices,
+} from '../utils/grammarQuiz';
+import type { GrammarLesson } from '../types';
 import { ConfettiCelebration } from './ConfettiCelebration';
-
-export type QuizMode = 'multiple' | 'subjective';
-export type QuizDirection = 'en-ko' | 'ko-en';
 
 const POINTS_PER_QUESTION = 10;
 
-type QuizPhase = 'daySelect' | 'select' | 'playing' | 'finished';
+type QuizPhase = 'daySelect' | 'playing' | 'finished';
 
 interface QuizTabProps {
   allLessons: GrammarLesson[];
@@ -19,27 +21,6 @@ interface QuizTabProps {
   currentDay: number;
   completedDays: number[];
   onWrongAnswer: (lessonId: string) => void;
-}
-
-function shuffle<T>(arr: T[]): T[] {
-  const copy = [...arr];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
-
-function getCorrectAnswer(lesson: GrammarLesson, direction: QuizDirection): string {
-  return direction === 'en-ko' ? lesson.rule : lesson.example;
-}
-
-function getPromptText(lesson: GrammarLesson, direction: QuizDirection): string {
-  return direction === 'en-ko' ? lesson.title : lesson.rule;
-}
-
-function directionLabel(direction: QuizDirection): string {
-  return direction === 'en-ko' ? '주제→규칙' : '규칙→영문';
 }
 
 export function QuizTab({
@@ -52,32 +33,19 @@ export function QuizTab({
 }: QuizTabProps) {
   const [phase, setPhase] = useState<QuizPhase>('daySelect');
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
-  const [direction, setDirection] = useState<QuizDirection>('en-ko');
-  const [playDirection, setPlayDirection] = useState<QuizDirection>('en-ko');
-  const [mode, setMode] = useState<QuizMode | null>(null);
-  const [questions, setQuestions] = useState<GrammarLesson[]>([]);
+  const [questions, setQuestions] = useState<GrammarQuizQuestion[]>([]);
   const [current, setCurrent] = useState(0);
   const [score, setScore] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
-  const [textAnswer, setTextAnswer] = useState('');
-  const [submitted, setSubmitted] = useState(false);
   const [showCelebration, setShowCelebration] = useState(false);
 
-  const dayLessons =
-    selectedDay !== null ? getLessonsForDay(allLessons, selectedDay) : [];
-  const questionCount = dayLessons.length;
-  const maxScore = questions.length > 0 ? questions.length * POINTS_PER_QUESTION : 0;
-
   const clearQuizRun = useCallback(() => {
-    setMode(null);
     setQuestions([]);
     setCurrent(0);
     setScore(0);
     setCorrectCount(0);
     setSelected(null);
-    setTextAnswer('');
-    setSubmitted(false);
     setShowCelebration(false);
   }, []);
 
@@ -87,27 +55,21 @@ export function QuizTab({
     clearQuizRun();
   }, [clearQuizRun]);
 
-  const resetToModeSelect = useCallback(() => {
-    setPhase('select');
-    clearQuizRun();
-  }, [clearQuizRun]);
-
-  const startQuiz = (quizMode: QuizMode) => {
-    const pool = dayLessons;
-    const q = shuffle(pool);
-    const quizDir: QuizDirection = quizMode === 'subjective' ? 'ko-en' : direction;
-    setPlayDirection(quizDir);
-    setMode(quizMode);
-    setQuestions(q);
-    setCurrent(0);
-    setScore(0);
-    setCorrectCount(0);
-    setSelected(null);
-    setTextAnswer('');
-    setSubmitted(false);
-    setShowCelebration(false);
-    setPhase('playing');
-  };
+  const startDayQuiz = useCallback(
+    (day: number) => {
+      const pool = getQuizQuestionsForDay(allLessons, day);
+      if (pool.length === 0) return;
+      setSelectedDay(day);
+      setQuestions(buildShuffledQuestionPool(pool));
+      setCurrent(0);
+      setScore(0);
+      setCorrectCount(0);
+      setSelected(null);
+      setShowCelebration(false);
+      setPhase('playing');
+    },
+    [allLessons],
+  );
 
   useEffect(() => {
     resetToDaySelect();
@@ -115,28 +77,20 @@ export function QuizTab({
 
   useBackHandler(() => {
     if (phase === 'daySelect') return false;
-    if (phase === 'select') {
-      resetToDaySelect();
-      return true;
-    }
-    resetToModeSelect();
+    resetToDaySelect();
     return true;
   }, phase !== 'daySelect');
 
-  const currentWord = questions[current];
+  const currentQ = questions[current];
   const totalQuestions = questions.length;
+  const maxScore = totalQuestions * POINTS_PER_QUESTION;
 
   const options = useMemo(() => {
-    if (!currentWord || mode !== 'multiple') return [];
-    const pick = (l: GrammarLesson) => (playDirection === 'en-ko' ? l.rule : l.example);
-    const correct = pick(currentWord);
-    const wrongPool = allLessons.filter((l) => l.id !== currentWord.id);
-    const wrongCount = Math.min(3, wrongPool.length);
-    const wrong = shuffle(wrongPool)
-      .slice(0, wrongCount)
-      .map(pick);
-    return shuffle([correct, ...wrong]);
-  }, [currentWord, allLessons, mode, playDirection]);
+    if (!currentQ) return [];
+    const wrong = currentQ.choices.filter((c) => c !== currentQ.answer);
+    const pick = shuffleChoices(wrong).slice(0, Math.min(3, wrong.length));
+    return shuffleChoices([currentQ.answer, ...pick]);
+  }, [currentQ]);
 
   if (phase === 'daySelect') {
     return (
@@ -146,7 +100,7 @@ export function QuizTab({
           <p className="quiz-topic-badge">
             {topicLabel} · {totalDays}일차
           </p>
-          <p>일차를 선택한 뒤 객관식·주관식 퀴즈를 풀어 보세요.</p>
+          <p>일차를 선택하세요. 문장의 괄호 ( ) 안에 들어갈 맞는 표현을 고릅니다.</p>
         </div>
 
         <div className="home-progress-section quiz-day-section">
@@ -157,21 +111,21 @@ export function QuizTab({
             {Array.from({ length: totalDays }, (_, i) => {
               const day = i + 1;
               const status = getDayStatus(day, completedDays, currentDay);
-              const count = getDayLessonCount(allLessons, day);
+              const quizCount = getDayQuizCount(allLessons, day);
+              const lessonCount = getDayLessonCount(allLessons, day);
 
               return (
                 <li key={day}>
                   <button
                     type="button"
                     className={`home-day-item ${status}`}
-                    disabled={status === 'locked'}
-                    onClick={() => {
-                      setSelectedDay(day);
-                      setPhase('select');
-                    }}
+                    disabled={status === 'locked' || quizCount === 0}
+                    onClick={() => startDayQuiz(day)}
                   >
                     <span className="home-day-num">{day}일차 퀴즈</span>
-                    <span className="home-day-meta">{count}문제</span>
+                    <span className="home-day-meta">
+                      {quizCount}문제 · {lessonCount}주제
+                    </span>
                     <span className="home-day-badge">
                       {status === 'completed' && '완료'}
                       {status === 'current' && '학습 중'}
@@ -188,72 +142,7 @@ export function QuizTab({
     );
   }
 
-  if (phase === 'select' && selectedDay !== null) {
-    const enKo = direction === 'en-ko';
-    return (
-      <section className="quiz-tab">
-        <div className="quiz-intro">
-          <button type="button" className="quiz-back-link" onClick={resetToDaySelect}>
-            ← 일차 선택
-          </button>
-          <h2>{selectedDay}일차 퀴즈</h2>
-          <p className="quiz-topic-badge">{topicLabel}</p>
-          <p className="quiz-intro-count">
-            <strong>{questionCount}문제</strong> · 해당 일차 문법 전체 · 틀린 항목은 나의 문법 노트에 저장
-          </p>
-
-          <div className="quiz-direction-section">
-            <p className="quiz-direction-label">객관식 출제 방향</p>
-            <div className="quiz-direction-toggle" role="group" aria-label="객관식 문법 출제 방향">
-              <button
-                type="button"
-                className={`quiz-direction-btn ${enKo ? 'active' : ''}`}
-                onClick={() => setDirection('en-ko')}
-              >
-                주제→규칙
-              </button>
-              <button
-                type="button"
-                className={`quiz-direction-btn ${!enKo ? 'active' : ''}`}
-                onClick={() => setDirection('ko-en')}
-              >
-                규칙→영문
-              </button>
-            </div>
-            <p className="quiz-direction-hint">
-              {enKo ? '문법 주제를 보고 규칙 맞추기' : '규칙을 보고 영문 예문 맞추기'}
-            </p>
-          </div>
-
-          <div className="quiz-mode-grid">
-            <button
-              type="button"
-              className="quiz-mode-card"
-              onClick={() => startQuiz('multiple')}
-              disabled={questionCount === 0}
-            >
-              <span className="quiz-mode-icon">📝</span>
-              <strong>객관식</strong>
-              <span>{enKo ? '규칙 4개 중 고르기' : '예문 4개 중 고르기'}</span>
-            </button>
-            <button
-              type="button"
-              className="quiz-mode-card quiz-mode-card-subjective"
-              onClick={() => startQuiz('subjective')}
-              disabled={questionCount === 0}
-            >
-              <span className="quiz-mode-icon">✍️</span>
-              <strong>주관식</strong>
-              <span className="quiz-mode-only-ko-en">규칙→영문 전용</span>
-              <span>규칙 보고 영문 예문 입력</span>
-            </button>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
-  if (phase === 'finished') {
+  if (phase === 'finished' && selectedDay !== null) {
     const perfect = correctCount === totalQuestions && totalQuestions > 0;
     return (
       <section className="quiz-tab">
@@ -261,8 +150,7 @@ export function QuizTab({
         <div className="quiz-result">
           <h2>퀴즈 결과</h2>
           <p className="quiz-result-mode">
-            {directionLabel(playDirection)} · {mode === 'multiple' ? '객관식' : '주관식'} · {selectedDay}
-            일차
+            괄호 빈칸 객관식 · {selectedDay}일차
           </p>
           <div className="quiz-result-stats">
             <div className="quiz-result-stat">
@@ -279,42 +167,28 @@ export function QuizTab({
             </div>
           </div>
           {perfect && <p className="celebration-text">참 잘했어요! 🎉</p>}
-          <button type="button" className="primary-btn" onClick={resetToModeSelect}>
+          <button type="button" className="primary-btn" onClick={() => startDayQuiz(selectedDay)}>
             다시 하기
+          </button>
+          <button type="button" className="quiz-back-link" onClick={resetToDaySelect}>
+            일차 목록으로
           </button>
         </div>
       </section>
     );
   }
 
-  if (!currentWord || !mode) return null;
+  if (!currentQ) return null;
 
   const isLast = current + 1 >= totalQuestions;
-  const correctAnswer = getCorrectAnswer(currentWord, playDirection);
-  const promptText = getPromptText(currentWord, playDirection);
-  const enKo = playDirection === 'en-ko';
+  const isCorrect = selected === currentQ.answer;
+  const hasAnswered = !!selected;
 
-  const checkAnswer = (answer: string) => {
-    if (enKo) return isQuizAnswerCorrect(answer, correctAnswer);
-    return isEnglishQuizAnswerCorrect(answer, correctAnswer);
-  };
-
-  const handleMultipleSelect = (option: string) => {
+  const handleSelect = (option: string) => {
     if (selected) return;
     setSelected(option);
-    if (option !== correctAnswer) onWrongAnswer(currentWord.id);
+    if (option !== currentQ.answer) onWrongAnswer(currentQ.lessonId);
   };
-
-  const handleSubjectiveSubmit = () => {
-    if (submitted || !textAnswer.trim()) return;
-    setSubmitted(true);
-    if (!checkAnswer(textAnswer)) onWrongAnswer(currentWord.id);
-  };
-
-  const isCorrect =
-    mode === 'multiple' ? selected === correctAnswer : submitted && checkAnswer(textAnswer);
-
-  const hasAnswered = mode === 'multiple' ? !!selected : submitted;
 
   const handleNext = () => {
     const points = hasAnswered && isCorrect ? POINTS_PER_QUESTION : 0;
@@ -332,12 +206,7 @@ export function QuizTab({
     setScore(newScore);
     setCurrent((c) => c + 1);
     setSelected(null);
-    setTextAnswer('');
-    setSubmitted(false);
   };
-
-  const answeredCount = correctCount;
-  const progressNum = current + 1;
 
   return (
     <section className="quiz-tab">
@@ -345,87 +214,64 @@ export function QuizTab({
         <div className="quiz-status-row">
           <span className="quiz-status-label">진행</span>
           <span className="quiz-status-value quiz-status-progress">
-            {progressNum}/{totalQuestions}
+            {current + 1}/{totalQuestions}
           </span>
         </div>
         <div className="quiz-status-row">
           <span className="quiz-status-label">점수</span>
           <span className="quiz-status-value quiz-status-score">
-            {score}/{totalQuestions * POINTS_PER_QUESTION}점
+            {score}/{maxScore}점
           </span>
         </div>
         <div className="quiz-status-tags">
-          <span className="quiz-mode-label">{directionLabel(playDirection)}</span>
-          <span className="quiz-mode-label">{mode === 'multiple' ? '객관식' : '주관식'}</span>
-          <span className="quiz-mode-label">정답 {answeredCount}</span>
+          <span className="quiz-mode-label">{selectedDay}일차</span>
+          <span className="quiz-mode-label">{currentQ.lessonTitle}</span>
+          <span className="quiz-mode-label">정답 {correctCount}</span>
         </div>
       </div>
 
       <div className="quiz-card">
-        <h3 className={`quiz-word ${!enKo ? 'quiz-prompt-ko' : ''}`}>{promptText}</h3>
-        <p className="quiz-prompt">
-          {mode === 'multiple'
-            ? enKo
-              ? '규칙을 고르세요'
-              : '영문 예문을 고르세요'
-            : '영문 예문을 입력하세요'}
+        <p className="quiz-grammar-topic">{currentQ.lessonTitle}</p>
+        <p className="quiz-fill-prompt">괄호 ( ) 안에 알맞은 말을 고르세요.</p>
+
+        <p className="quiz-fill-sentence">
+          {currentQ.before}
+          <span className="quiz-fill-blank">
+            ({' '}
+            {selected ? (isCorrect ? currentQ.answer : selected) : '?'}
+            {' '})
+          </span>
+          {currentQ.after}
         </p>
 
-        {mode === 'multiple' && (
-          <div className="quiz-options">
-            {options.map((opt) => {
-              let cls = 'quiz-option';
-              if (selected) {
-                if (opt === correctAnswer) cls += ' correct';
-                else if (opt === selected) cls += ' wrong';
-              }
-              return (
-                <button
-                  key={opt}
-                  type="button"
-                  className={cls}
-                  onClick={() => handleMultipleSelect(opt)}
-                  disabled={!!selected}
-                >
-                  {opt}
-                </button>
-              );
-            })}
-          </div>
-        )}
-
-        {mode === 'subjective' && (
-          <div className="quiz-subjective">
-            <input
-              type="text"
-              className="quiz-text-input"
-              placeholder="영문 예문 입력"
-              value={textAnswer}
-              onChange={(e) => setTextAnswer(e.target.value)}
-              disabled={submitted}
-              onKeyDown={(e) => e.key === 'Enter' && handleSubjectiveSubmit()}
-              enterKeyHint="done"
-              autoCapitalize="none"
-              autoCorrect="off"
-            />
-            {!submitted && (
+        <div className="quiz-options">
+          {options.map((opt: string) => {
+            let cls = 'quiz-option';
+            if (selected) {
+              if (opt === currentQ.answer) cls += ' correct';
+              else if (opt === selected) cls += ' wrong';
+            }
+            return (
               <button
+                key={opt}
                 type="button"
-                className="primary-btn quiz-submit-btn"
-                onClick={handleSubjectiveSubmit}
-                disabled={!textAnswer.trim()}
+                className={cls}
+                onClick={() => handleSelect(opt)}
+                disabled={!!selected}
               >
-                제출
+                {opt}
               </button>
-            )}
-          </div>
-        )}
+            );
+          })}
+        </div>
 
         {hasAnswered && (
           <div className="quiz-feedback">
             <p>{isCorrect ? '정답입니다!' : '오답 — 나의 문법 노트에 저장했어요'}</p>
-            {mode === 'subjective' && !isCorrect && submitted && (
-              <p className="quiz-correct-answer">정답: {correctAnswer}</p>
+            {!isCorrect && (
+              <p className="quiz-correct-answer">
+                정답: ({currentQ.answer})
+              </p>
             )}
             <button type="button" className="primary-btn" onClick={handleNext}>
               {isLast ? '결과 보기' : '다음 문제'}

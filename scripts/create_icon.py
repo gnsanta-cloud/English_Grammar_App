@@ -20,20 +20,20 @@ WHITE = (248, 250, 252, 255)
 YELLOW_BG_TOP = (254, 249, 195, 255)
 YELLOW_BG_BOTTOM = (253, 224, 71, 255)
 
-# 레퍼런스 WORD 타일 색 (V/O/C/A)
+# 레퍼런스 WORD 타일 색 (G/R/A/M)
 TILE_COLORS = [
-    (52, 211, 153, 255),   # V — 민트
-    (236, 72, 153, 255),   # O — 핑크
-    (250, 204, 21, 255),   # C — 노랑
-    (251, 146, 60, 255),   # A — 오렌지
+    (52, 211, 153, 255),   # G — 민트
+    (236, 72, 153, 255),   # R — 핑크
+    (250, 204, 21, 255),   # A — 노랑
+    (251, 146, 60, 255),   # M — 오렌지
 ]
 
-# 2x2 겹침 배치 — WORD와 동일 레이아웃, 글자 VOCA
+# 2x2 겹침 배치 — WORD와 동일 레이아웃, 글자 GRAM
 BLOCKS = [
-    ("V", 0.06, 0.10, 0),
-    ("O", 0.50, 0.06, 1),
-    ("C", 0.04, 0.48, 2),
-    ("A", 0.48, 0.44, 3),
+    ("G", 0.06, 0.10, 0),
+    ("R", 0.50, 0.06, 1),
+    ("A", 0.04, 0.48, 2),
+    ("M", 0.48, 0.44, 3),
 ]
 
 # 귀여운 두꺼운 폰트 (Comic Sans Bold → Arial Rounded Bold)
@@ -114,7 +114,7 @@ def draw_letter_tile(
 
 
 def create_julia_blocks_icon(size: int = 1024) -> Image.Image:
-    """V O C A 컬러 블록 타일 (WORD 스타일, 귀여운 두꺼운 폰트)."""
+    """G R A M 컬러 블록 타일 (WORD 스타일, 귀여운 두꺼운 폰트)."""
     icon = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     draw = ImageDraw.Draw(icon)
     draw_yellow_bg(draw, size)
@@ -180,7 +180,7 @@ def main() -> None:
 
     save_android_icons(icon_1024, icon_round)
 
-    print("Created Julia Voca letter-block icons (V-O-C-A, cute bold font):")
+    print("Created Julia Grammar letter-block icons (G-R-A-M, cute bold font):")
     print(f"  - {assets_dir / 'app-icon.png'}")
     print(f"  - {public / 'icon.png'}")
     print(f"  - Android mipmap folders")
